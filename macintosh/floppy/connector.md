@@ -47,7 +47,7 @@ The non-standard 19-pin D-subminiature connector used for external drive connect
 | RD / Read             | IWM/SWIM     | <-        | 18                 | 16              |
 | WR / Write            | IWM/SWIM     | ->        | 19                 | 18              |
 
-* The last ground (D-subminiature pin 4) is left floating by drives compatible with Apple II computers.
+\* The last ground (D-subminiature pin 4) is left floating by drives compatible with Apple II computers.
 
 Direction is Macintosh relative to drive.
 
@@ -85,7 +85,7 @@ Direction is Macintosh relative to drive.
 | SE*, IIcx*, IIci*       | -12V              | Power Supply | ->        |
 | Other                   | Not Connected     | --           | --        |
 
-* D-subminiature connector only; on 2x10 pin header, this pin is not connected.
+\* D-subminiature connector only; on 2x10 pin header, this pin is not connected.
 
 Direction is Macintosh relative to drive.
 
@@ -99,7 +99,7 @@ Direction is Macintosh relative to drive.
 | SE FDHD*, SE/30*        | +5V                         | Power Supply | ->        |
 | Other†                  | Not Connected               | --           | --        |
 
-* D-subminiature connector only; on 2x10 pin header, this pin is not connected.
+\* D-subminiature connector only; on 2x10 pin header, this pin is not connected.
 
 † Macintosh models with manual-inject floppy drives may connect this pin to ground, which may cause automatic-inject floppy drives to eject constantly.
 
