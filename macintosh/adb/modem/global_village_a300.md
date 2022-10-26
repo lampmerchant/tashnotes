@@ -2,7 +2,7 @@
 
 This document contains experimentally-observed behavior of the Global Village A300 modem's ADB protocol.  It contains enough information to satisfactorally emulate the serial port, however, many unknowns exist.
 
-The modem's default address is 0x5, which is the normal default address for low-speed serial devices, and its default handler ID is 0x36.
+The modem's default address may be 0x5 or 0x7 and its default handler ID is 0x36.
 
 Consistent with ADB standards, register 0 is the primary communications channel with the modem.
 
@@ -30,7 +30,7 @@ The byte 0x95 is treated specially by the driver; in order to reflect the recept
 
 ### Modem-to-Mac Status A
 
-Default state appears to be 0xF0 0x01 0x00 0x30 0x0C 0x88 0x88 0x88.  First four bytes may be the same as Talk 1, second byte may be the same as second byte of Listen 1.
+Default state (with driver installed) appears to be 0xF0 0x01 0x00 0x30 0x0C 0x88 0x88 0x88.  First four bytes may be the same as Talk 1, second byte may be the same as second byte of Listen 1.
 
 | Bit (big endian) | Meaning                                       |
 | ---------------- | --------------------------------------------- |
@@ -65,7 +65,7 @@ Listen 0 will write data to be sent by the serial port.  The payload must always
 
 ## Talk 1
 
-Payload appears always to be four bytes in length.  May be the same as first four bytes of Modem-to-Mac Status A.
+Payload appears always to be four bytes in length.  May be the same as first four bytes of Modem-to-Mac Status A.  Post-reset state is 0xF0000000.
 
 ## Listen 1
 
@@ -79,18 +79,17 @@ Payload appears always to be two bytes in length.
 
 ## Talk 2
 
-Payload appears always to be eight bytes in length.  Appears to communicate the information given by the driver's 'about' box:
+Payload appears always to be six bytes in length.  Appears to communicate the information given by the driver's 'about' box:
 
 | Bits (big endian) | Example Value | Meaning                                                                       |
 | ----------------- | ------------- | ----------------------------------------------------------------------------- |
-| 63-60             | 0x1           | Firmware major revision (0-9)                                                 |
-| 59-56             | 0x5           | Firmware minor revision (0-9)                                                 |
-| 55-32             | 0x01E8C7      | ID number (shown as decimal)                                                  |
-| 31-26             | 0b010100      | Undetermined                                                                  |
-| 25-16             | 0x279         | Manufacture date, expressed as number of weeks since Sunday, 31 December 1989 |
-| 15-0              | 0xE1E1        | Undetermined                                                                  |
+| 47-44             | 0x1           | Firmware major revision (0-9)                                                 |
+| 43-40             | 0x4           | Firmware minor revision (0-9)                                                 |
+| 39-16             | 0x019F8E      | ID number (shown as decimal)                                                  |
+| 15-10             | 0b011001      | Undetermined                                                                  |
+| 9-0               | 0x03A         | Manufacture date, expressed as number of weeks since Sunday, 31 December 1989 |
 
-Example values are from a modem where the control panel displayed "Firmware 1.5, Made 2/17/2, ID 125127", however the stated manufacture date being in 2002 is difficult to believe.
+Example values are from a modem where the control panel displayed "Firmware 1.4, Made 1991-02-10, ID 106382".
 
 ## Listen 2
 
