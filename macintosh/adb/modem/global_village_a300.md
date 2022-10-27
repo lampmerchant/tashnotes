@@ -2,7 +2,7 @@
 
 This document contains experimentally-observed behavior of the Global Village A300 modem's ADB protocol.  It contains enough information to satisfactorally emulate the serial port, however, many unknowns exist.
 
-The modem's default address may be 0x5 or 0x7 and its default handler ID is 0x36.
+The modem's default address may be 0x5 (observed on firmware 1.5) or 0x7 (observed on firmware 1.4) and its default handler ID is 0x36.
 
 Consistent with ADB standards, register 0 is the primary communications channel with the modem.
 
