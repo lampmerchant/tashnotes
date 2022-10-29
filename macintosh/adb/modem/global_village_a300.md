@@ -13,7 +13,7 @@ A Talk 0 command will read status information or data received by the serial por
 | 8th Byte  | Meaning                                                                                                |
 | --------- | ------------------------------------------------------------------------------------------------------ |
 | 0x00-0x7F | Payload contains 8 bytes received by serial port in 1st through 8th bytes                              |
-| 0x80      | Undetermined                                                                                           |
+| 0x80      | Payload contains no data                                                                               |
 | 0x81      | Payload contains 1 byte received by serial port in 1st byte, 2nd through 7th are invalid               |
 | 0x82      | Payload contains 2 bytes received by serial port in 1st through 2nd bytes, 3rd through 7th are invalid |
 | 0x83      | Payload contains 3 bytes received by serial port in 1st through 3rd bytes, 4th through 7th are invalid |
@@ -30,20 +30,35 @@ The byte 0x95 is treated specially by the driver; in order to reflect the recept
 
 ### Modem-to-Mac Status A
 
-Default state (with driver installed) appears to be 0xF0 0x01 0x00 0x30 0x0C 0x88 0x88 0x88.  First four bytes may be the same as Talk 1, second byte may be the same as second byte of Listen 1.
+Default state (with driver installed) appears to be 0xF0 0x01 0x00 0x30 0x0C.  First four bytes are the same as Talk 1, second byte may be the same as second byte of Listen 1.
 
-| Bit (big endian) | Meaning                                       |
-| ---------------- | --------------------------------------------- |
-| 63-62            | Undetermined                                  |
-| 61               | OH (off-hook) indicator, active low           |
-| 60               | CD (carrier detect) indicator, active low (?) |
-| 59-57            | Undetermined                                  |
-| 56               | AA (auto answer) indicator, active high       |
-| 55-0             | Undetermined                                  |
+| Bit (big endian) | Meaning                                   |
+| ---------------- | ----------------------------------------- |
+| 39-38            | Undetermined                              |
+| 37               | OH (off-hook) indicator, active low       |
+| 36-33            | Undetermined                              |
+| 32               | AA (auto answer) indicator, active high   |
+| 31-26            | Undetermined                              |
+| 25               | Modem on?                                 |
+| 24               | Modem driver installed?                   |
+| 23-0             | Undetermined                              |
+
+36-34 change when connection is being established, 36 active low and 35-34 active high.  One of these drives the CD (carrier detect) indicator).
 
 ### Modem-to-Mac Status B
 
-Undetermined.
+| Bit | Meaning                                         |
+| --- | ----------------------------------------------- |
+| 7-4 | Undetermined                                    |
+| 3-0 | Baud rate of established connection (see below) |
+
+| Bits 3-0 | Baud Rate |
+| -------- | --------- |
+| 0x8      | 2400      |
+| 0x7      | 1200      |
+| 0x6      | 300       |
+
+Other values are undetermined.
 
 ## Listen 0
 
@@ -65,11 +80,11 @@ Listen 0 will write data to be sent by the serial port.  The payload must always
 
 ## Talk 1
 
-Payload appears always to be four bytes in length.  May be the same as first four bytes of Modem-to-Mac Status A.  Post-reset state is 0xF0000000.
+Payload is the same as the first four bytes of Modem-to-Mac Status A.  Post-reset state is 0xF0000000.
 
 ## Listen 1
 
-Payload appears always to be two bytes in length.
+Payload appears always to be two bytes in length.  Second byte may be the same as second byte of Modem-to-Mac Status A.
 
 | Bits (big endian) | Meaning                 |
 | ----------------- | ----------------------- |
