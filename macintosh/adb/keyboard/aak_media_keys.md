@@ -11,7 +11,7 @@ The Apple Adjustable Keyboard appears as two devices:
 
 ### Talk 0
 
-Talk 0 behaves the same way as on a standard keyboard: it reports key press events as bytes with the MSB set for a release event and clear for a press event, and scan codes in the lower seven bits.  It reports a maximum of two such event bytes per Talk 0 request.  If it has only one event to report, the event byte is followed by an 0xFF byte; if it has no events to report, no reply is given.
+Talk 0 behaves the same way as on a standard keyboard: it reports key events as bytes with the MSB set for a key release and clear for a key press, and scan codes in the lower seven bits.  It reports a maximum of two such event bytes per Talk 0 request.  If it has only one event to report, the event byte is followed by an 0xFF byte; if it has no events to report, no reply is given.
 
 The scan codes used by the media key device are as follows:
 
