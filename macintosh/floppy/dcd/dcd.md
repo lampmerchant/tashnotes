@@ -6,7 +6,7 @@ DCD uses the floppy disk drive controller (IWM/SWIM) as a high-speed serial inte
 
 Multiple DCD devices can be connected to a single Macintosh in a daisy chain, optionally with a single floppy disk drive at the end of the chain.  The protocol places no limit on the number of chained DCD devices, but in practice, it is limited by ROM support to 2 or 4.  On Macs that only support 2 chained DCD devices, connecting a chain of more than 2 will cause the Mac to only recognize the first.
 
-All signals from the IWM/SWIM are common to all floppy disk drive connectors in a Macintosh except for the enable (!ENBL) signal; the IWM/SWIM has two of these (!ENBL1 and !ENBL2) with the intention of being able to control two floppy disk drives.  All known Macintosh ROMs that have support for DCD will only recognize DCD devices when !ENBL2 is used as the !ENBL signal.  When a Macintosh has an external 19-pin D-sub (Often referred to as "DB-19", but this is incorrect as "DB" in the de facto [D-subminiature](https://en.wikipedia.org/wiki/D-subminiature) standard refers to the shell size which accommodates 25 pins and is used for PC parallel ports.) floppy disk drive connector, !ENBL2 is always routed to it, but !ENBL2 can still be used to connect devices even on a Macintosh that does not have such a connector.
+All signals from the IWM/SWIM are common to all floppy disk drive connectors in a Macintosh except for the enable (!ENBL) signal; the IWM/SWIM has two of these (!ENBL1 and !ENBL2) with the intention of being able to control two floppy disk drives.  All known Macintosh ROMs that have support for DCD will only recognize DCD devices when !ENBL2 is used as the !ENBL signal.  When a Macintosh has an external 19-pin D-sub[^1] floppy disk drive connector, !ENBL2 is always routed to it, but !ENBL2 can still be used to connect devices even on a Macintosh that does not have such a connector.
 
 ## Macintosh Compatibility Matrix
 
@@ -62,3 +62,5 @@ More Info:
 
   * [Directly Connected Disks Specification 1.2a](http://bitsavers.trailing-edge.com/pdf/apple/disk/hd20/Directly_Connected_Disks_Specification_1.2a_May85.pdf)
     * Note that this document has several differences from the protocol as implemented.
+
+[^1]: Often referred to as "DB-19", but this is incorrect as "DB" in the de facto [D-subminiature](https://en.wikipedia.org/wiki/D-subminiature) standard refers to the shell size which accommodates 25 pins and is used for PC parallel ports.
