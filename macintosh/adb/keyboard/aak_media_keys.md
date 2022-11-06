@@ -1,8 +1,19 @@
 # Apple Adjustable Keyboard Media Keys
 
-The AAK appears as two devices, a keyboard (with original address 0x2 and handler ID 0x10) and an auxillary device (with original address 0x7 and handler ID 0x2) which handles the media keys (volume up/down, mute, and mic.)
+The Apple Adjustable Keyboard appears as two devices:
 
-The auxillary device's registers 1 and 2 appear to mirror those of the keyboard.  Register 0 behaves like a keyboard (returns two key events per Talk command, MSB clear on press and set on release) but with only four keys:
+| Original Address | Handler ID | Function         |
+| ---------------- | ---------- | ---------------- |
+| 0x2              | 0x10       | Keyboard         |
+| 0x7              | 0x02       | Media Key Device |
+
+## Media Key Device
+
+### Talk 0
+
+Talk 0 behaves the same way as on a standard keyboard: it reports key press events as bytes with the MSB set for a release event and clear for a press event, and scan codes in the lower seven bits.  It reports a maximum of two such event bytes per Talk 0 request.  If it has only one event to report, the event byte is followed by an 0xFF byte; if it has no events to report, no reply is given.
+
+The scan codes used by the media key device are as follows:
 
 | Key      | Code |
 | -------- | ---- |
@@ -10,3 +21,15 @@ The auxillary device's registers 1 and 2 appear to mirror those of the keyboard.
 | Volume ↓ | 0x02 |
 | Mute     | 0x01 |
 | Mic      | 0x00 |
+
+### Talk 1
+
+Talk 1 appears to always return 0xFF02.
+
+### Talk 2
+
+Talk 2 appears to always return 0xFFFF.
+
+## Thanks
+
+*Thanks to Velociraptors and treellama on #68kmla for their help in compiling and verifying this information!*
