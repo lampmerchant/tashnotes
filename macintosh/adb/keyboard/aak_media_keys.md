@@ -30,6 +30,10 @@ Talk 1 appears to always return 0xFF02.
 
 Talk 2 appears to always return 0xFFFF.
 
+### System Software Support
+
+Native support for the Volume Up/Down and Mute keys (but not the Mic key) exists in System 7.5.3 and 7.5.5.
+
 ## Thanks
 
 *Thanks to Velociraptors and treellama on #68kmla for their help in compiling and verifying this information!*
