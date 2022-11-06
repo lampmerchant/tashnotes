@@ -32,8 +32,11 @@ Talk 2 appears to always return 0xFFFF.
 
 ### System Software Support
 
-Native support for the Volume Up/Down and Mute keys (but not the Mic key) exists in System 7.5.3 and 7.5.5.
+Native support for the Volume Up/Down and Mute keys (but not the Mic key) was added with System 7.1 System Update 3.0[^1].  An extension called Record Button[^2] exists to provide support for the Mic key.
 
 ## Thanks
 
 *Thanks to Velociraptors and treellama on #68kmla for their help in compiling and verifying this information!*
+
+[^1]: <https://obsolete.macfixer.com/vintage-software/notes/System_Update_3.0_1.4MB.html>
+[^2]: <http://www.geocities.ws/ddurant/ext.html>
