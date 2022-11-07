@@ -32,18 +32,22 @@ The byte 0x95 is treated specially by the driver; in order to reflect the recept
 
 Default state (with driver installed) appears to be 0xF0 0x01 0x00 0x30 0x0C.  First four bytes are the same as Talk 1, second byte may be the same as second byte of Listen 1.
 
-| Bit (big endian) | Meaning                                   |
-| ---------------- | ----------------------------------------- |
-| 39-38            | Undetermined                              |
-| 37               | OH (off-hook) indicator, active low       |
-| 36-33            | Undetermined                              |
-| 32               | AA (auto answer) indicator, active high   |
-| 31-26            | Undetermined                              |
-| 25               | Modem on?                                 |
-| 24               | Modem driver installed?                   |
-| 23-0             | Undetermined                              |
+| Bit (big endian) | Meaning                                                                          |
+| ---------------- | -------------------------------------------------------------------------------- |
+| 39-38            | Undetermined                                                                     |
+| 37               | OH (off-hook) indicator, active low                                              |
+| 36-35            | Undetermined                                                                     |
+| 34               | CD (carrier detect) indicator, active high                                       |
+| 33               | Undetermined                                                                     |
+| 32               | AA (auto answer) indicator, active high                                          |
+| 31-26            | Undetermined                                                                     |
+| 25               | Modem on?                                                                        |
+| 24               | Modem driver installed?                                                          |
+| 23-16            | Undetermined                                                                     |
+| 15-8             | Baud rate display (on when CD is on); 0x80 = 300, 0x60 = 1200, 0x30/other = 2400 |
+| 7-0              | Undetermined                                                                     |
 
-36-34 change when connection is being established, 36 active low and 35-34 active high.  One of these drives the CD (carrier detect) indicator).
+36-34 change when connection is being established, 36 active low and 35-34 active high.
 
 ### Modem-to-Mac Status B
 
