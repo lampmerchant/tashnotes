@@ -1,6 +1,6 @@
 # ADB Device List
 
-This is an obviously-incomplete list of known ADB devices and their identifying information (default address and default handler ID).
+This is an obviously-incomplete list of known ADB devices and their identifying information (default address and handler ID).
 
 ## License Dongles
 
