@@ -10,21 +10,22 @@ Consistent with ADB standards, register 0 is the primary communications channel 
 
 A Talk 0 command will read status information or data received by the serial port.  If no payload is received, there is no data or status to receive.  If received, the payload is always eight bytes in length, and the eighth byte determines the meaning of the payload:
 
-| 8th Byte  | Meaning                                                                                                |
-| --------- | ------------------------------------------------------------------------------------------------------ |
-| 0x00-0x7F | Payload contains 8 bytes received by serial port in 1st through 8th bytes                              |
-| 0x80      | Payload contains no data                                                                               |
-| 0x81      | Payload contains 1 byte received by serial port in 1st byte, 2nd through 7th are invalid               |
-| 0x82      | Payload contains 2 bytes received by serial port in 1st through 2nd bytes, 3rd through 7th are invalid |
-| 0x83      | Payload contains 3 bytes received by serial port in 1st through 3rd bytes, 4th through 7th are invalid |
-| 0x84      | Payload contains 4 bytes received by serial port in 1st through 4th bytes, 5th through 7th are invalid |
-| 0x85      | Payload contains 5 bytes received by serial port in 1st through 5th bytes, 6th through 7th are invalid |
-| 0x86      | Payload contains 6 bytes received by serial port in 1st through 6th bytes, 7th is invalid              |
-| 0x87      | Payload contains 7 bytes received by serial port in 1st through 7th bytes                              |
-| 0x88      | Modem-to-Mac status A in 1st through 5th bytes, 6th and 7th are invalid                                |
-| 0x89      | Modem-to-Mac status B in 1st byte, 2nd through 7th are invalid                                         |
-| 0x8A-0x8F | Undetermined                                                                                           |
-| 0x90-0xFF | Payload contains 8 bytes received by serial port in 1st through 8th bytes                              |
+| 8th Byte  | Meaning                                                                                                                      |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 0x00-0x7F | Payload contains 8 bytes received by serial port in 1st through 8th bytes                                                    |
+| 0x80      | Payload contains no data                                                                                                     |
+| 0x81      | Payload contains 1 byte received by serial port in 1st byte, 2nd through 7th are invalid                                     |
+| 0x82      | Payload contains 2 bytes received by serial port in 1st through 2nd bytes, 3rd through 7th are invalid                       |
+| 0x83      | Payload contains 3 bytes received by serial port in 1st through 3rd bytes, 4th through 7th are invalid                       |
+| 0x84      | Payload contains 4 bytes received by serial port in 1st through 4th bytes, 5th through 7th are invalid                       |
+| 0x85      | Payload contains 5 bytes received by serial port in 1st through 5th bytes, 6th through 7th are invalid                       |
+| 0x86      | Payload contains 6 bytes received by serial port in 1st through 6th bytes, 7th is invalid                                    |
+| 0x87      | Payload contains 7 bytes received by serial port in 1st through 7th bytes                                                    |
+| 0x88      | Modem-to-Mac status A in 1st through 5th bytes, 6th and 7th are invalid                                                      |
+| 0x89      | Modem-to-Mac status B in 1st byte, 2nd through 7th are invalid                                                               |
+| 0x8A-0x8F | Undetermined                                                                                                                 |
+| 0x90-0x9F | Same as 0x80-0x8F but requests the Mac to hold off sending Listen 0 commands until a payload ending in 0x80-0x8F is received |
+| 0xA0-0xFF | Payload contains 8 bytes received by serial port in 1st through 8th bytes                                                    |
 
 The byte 0x95 is treated specially by the driver; in order to reflect the reception of a single 0x95 byte, the device must send two 0x95 bytes in a row.  They do not have to be in the same ADB payload.
 
@@ -79,8 +80,8 @@ Listen 0 will write data to be sent by the serial port.  The payload must always
 | 0x85      | Payload contains 5 bytes to be sent to serial port in 1st through 5th bytes, 6th through 7th are invalid |
 | 0x86      | Payload contains 6 bytes to be sent to serial port in 1st through 6th bytes, 7th is invalid              |
 | 0x87      | Payload contains 7 bytes to be sent to serial port in 1st through 7th bytes                              |
-| 0x88-0x8F | Undetermined                                                                                             |
-| 0x90-0xFF | Payload contains 8 bytes to be sent to serial port in 1st through 8th bytes                              |
+| 0x88-0x9F | Undetermined                                                                                             |
+| 0xA0-0xFF | Payload contains 8 bytes to be sent to serial port in 1st through 8th bytes                              |
 
 ## Talk 1
 
