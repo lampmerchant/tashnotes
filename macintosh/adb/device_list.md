@@ -58,7 +58,7 @@ Original Address 0x5
 
 | Handler ID | Make           | Model Name   | Model Number | Description     |
 | ---------- | -------------- | ------------ | ------------ | --------------- |
-| 0x36       | Global Village | TelePort ADB | A300         | 2400-baud modem |
+| 0x36[^1]   | Global Village | TelePort ADB | A300         | 2400-baud modem |
 
 ## Other Devices
 
@@ -73,7 +73,7 @@ Original Address 0x7
 | 0x79[^2]   | LaCie                  | FM Radio              | ?            | FM radio                                    |
 | 0x7A[^10]  | BeeHive Technologies   | ADB I/O               |              | Analog and digital I/O interface            |
 
-[^1]: Also known to use address 0x7.
+[^1]: Also known to use default address 0x7.
 [^2]: [Source](https://vintagegeek.wordpress.com/2021/01/03/lacie-fm-radio-tuner-for-system-7-0-to-os9-macintosh-w-adb-port/#comment-1107)
 [^3]: Also emulates a standard mouse on address 0x3.
 [^4]: Initially has handler ID 0x01.
