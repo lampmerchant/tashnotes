@@ -67,11 +67,12 @@ Original Address 0x7
 | Handler ID | Make                   | Model Name            | Model Number | Description                                 |
 | ---------- | ---------------------- | --------------------- | ------------ | ------------------------------------------- |
 | 0x02[^8]   | Apple                  | Adjustable Keyboard   | M1242        | Media keys device of AAK                    |
-| 0x22[^9]   | Sophisticated Circuits | PowerKey              | PK-1         | Relay-controlled power strip                |
+| 0x22       | Sophisticated Circuits | PowerKey              | PK-1         | Relay-controlled power strip                |
 | 0x35[^7]   | Neotech                | Colour Adapter Module |              | Module for Neotech Image Grabber NuBus card |
 | 0x41       | JLCooper Electronics   | Media Control Station | 300007       | Jog dial and media control device           |
 | 0x79[^2]   | LaCie                  | FM Radio              | ?            | FM radio                                    |
 | 0x7A[^10]  | BeeHive Technologies   | ADB I/O               |              | Analog and digital I/O interface            |
+| 0x87       | Sophisticated Circuits | PowerKey Rebound!     | PKRB-M       | Watchdog timer                              |
 
 [^1]: Also known to use default address 0x7.
 [^2]: [Source](https://vintagegeek.wordpress.com/2021/01/03/lacie-fm-radio-tuner-for-system-7-0-to-os9-macintosh-w-adb-port/#comment-1107)
@@ -81,5 +82,4 @@ Original Address 0x7
 [^6]: [Source](https://github.com/tmk/tmk_keyboard/wiki/Apple-Desktop-Bus#keyboard-handler-id)
 [^7]: Source Jockelill on 68kMLA
 [^8]: Source Velociraptors on 68kMLA
-[^9]: Source olePigeon on 68kMLA
 [^10]: [Source](https://web.archive.org/web/19980501032801/http://www.bzzzzzz.com:80/BeeHive/ADB_IO/Downloads/ADB_IO_manual.pdf)
