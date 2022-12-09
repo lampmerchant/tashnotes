@@ -83,11 +83,13 @@ Direction is Macintosh relative to drive.
 | ----------------------- | ----------------- | ------------ | --------- |
 | 128K, 512K, 512Ke, Plus | -12V              | Power Supply | ->        |
 | SE*, IIcx*, IIci*       | -12V              | Power Supply | ->        |
-| Other                   | Not Connected     | --           | --        |
+| Other†                  | Not Connected     | --           | --        |
 
 \* D-subminiature connector only; on 2x10 pin header, this pin is not connected.
 
 Direction is Macintosh relative to drive.
+
+† Macintosh models with manual-inject floppy drives may connect this pin to ground, which may cause automatic-inject floppy drives to eject constantly.
 
 ### ¶
 
@@ -97,10 +99,8 @@ Direction is Macintosh relative to drive.
 | SE*                     | PWM                         | BBU          | ->        |
 | IIcx*, IIci*            | PWMPU (+5V pullup resistor) | Power Supply | ->        |
 | SE FDHD*, SE/30*        | +5V                         | Power Supply | ->        |
-| Other†                  | Not Connected               | --           | --        |
+| Other                   | Not Connected               | --           | --        |
 
 \* D-subminiature connector only; on 2x10 pin header, this pin is not connected.
-
-† Macintosh models with manual-inject floppy drives may connect this pin to ground, which may cause automatic-inject floppy drives to eject constantly.
 
 Direction is Macintosh relative to drive.
