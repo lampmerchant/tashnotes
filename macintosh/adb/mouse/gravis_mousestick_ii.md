@@ -35,14 +35,14 @@ The mouse movement data appears to be the same as in the ADB mouse protocol, wit
 
 ### Joystick Buttons
 
-| Bit | Description                |
-| --- | -------------------------- |
-| 7-5 | Always 1                   |
-| 4   | Right button atop joystick |
-| 3   | Left button atop joystick  |
-| 2   | Trigger button             |
-| 1   | Bottom circular button     |
-| 0   | Top circular button        |
+| Bit | Description                           |
+| --- | ------------------------------------- |
+| 7-5 | Always 1                              |
+| 4   | Right button atop joystick (button 5) |
+| 3   | Left button atop joystick (button 4)  |
+| 2   | Trigger button (button 1)             |
+| 1   | Bottom circular button (button 3)     |
+| 0   | Top circular button (button 2)        |
 
 Joystick button bits are 0 when down and 1 when up.
 
@@ -58,13 +58,13 @@ Joystick positions are given as unsigned 8-bit integers, with 0x80 representing 
 
 ### Joystick Buttons
 
-| Bit | Description                |
-| --- | -------------------------- |
-| 7-5 | Always 1                   |
-| 4   | Right button atop joystick |
-| 3   | Left button atop joystick  |
-| 2   | Trigger button             |
-| 1   | Bottom circular button     |
-| 0   | Top circular button        |
+| Bit | Description                           |
+| --- | ------------------------------------- |
+| 7-5 | Always 1                              |
+| 4   | Right button atop joystick (button 5) |
+| 3   | Left button atop joystick (button 4)  |
+| 2   | Trigger button (button 1)             |
+| 1   | Bottom circular button (button 3)     |
+| 0   | Top circular button (button 2)        |
 
 Joystick button bits are 0 when down and 1 when up.
