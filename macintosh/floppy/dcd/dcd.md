@@ -26,11 +26,19 @@ All signals from the IWM/SWIM are common to all floppy disk drive connectors in 
 | IIsi          | In ROM                  | External 19-Pin D-Sub         | 2?          |           |
 | Classic II    | In ROM                  | External 19-Pin D-Sub         | 2           | Tashtari  |
 | PowerBook 100 | In ROM                  | External HDI-20 Connector?    | 2?          |           |
-| LC II         | In ROM                  | SWIM PLCC Pin 19              | 2?          |           |
+| LC II         | In ROM                  | SWIM PLCC Pin 19              | 2?          | Tashtari  |
 | IIvi          | In ROM                  | SWIM PLCC Pin 19              | 2?          |           |
 | IIvx          | In ROM                  | SWIM PLCC Pin 19              | 2?          | Fizzbinn  |
 
 Cells marked with ? are speculated to be true but untested.
+
+## Macintosh System Software Compatibility Matrix
+
+| Version | Compatible? |
+| ------- | ----------- |
+| 6.0.8   | Yes         |
+| 7.1     | Yes         |
+| 7.5     | No          |
 
 ## Implementations
 
