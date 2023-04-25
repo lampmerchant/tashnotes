@@ -9,10 +9,10 @@ Every file on the cassette is preceded by a directory entry, a section containin
 | 0x00   | 8-bit unsigned int                 | 0xA5                                          |
 | 0x01   | 8-byte string                      | File name                                     |
 | 0x09   | 8-bit unsigned int                 | File type                                     |
-| 0x0A   | 16-bit unsigned int, little-endian | Segment                                       |
-| 0x0C   | 16-bit unsigned int, little-endian | Offset                                        |
-| 0x0E   | 16-bit unsigned int, little-endian | Length                                        |
-| 0x10   | 240-byte string                    | Padding, bytes equal to second byte of length |
+| 0x0A   | 16-bit unsigned int, little-endian | Length                                        |
+| 0x0C   | 16-bit unsigned int, little-endian | Segment                                       |
+| 0x0E   | 16-bit unsigned int, little-endian | Offset                                        |
+| 0x10   | 240-byte string                    | Padding, bytes equal to second byte of offset |
 
 File names are padded with spaces and case-sensitive.
 
