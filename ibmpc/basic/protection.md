@@ -1,0 +1,50 @@
+# IBM PC BASIC Protection Scheme
+
+## Lookup Tables
+
+| Table | Contents                                                                       |
+| ----- | ------------------------------------------------------------------------------ |
+| X     | `0x9A, 0xF7, 0x19, 0x83, 0x24, 0x63, 0x43, 0x83, 0x75, 0xCD, 0x8D, 0x84, 0xA9` |
+| Y     | `0x7C, 0x88, 0x59, 0x74, 0xE0, 0x97, 0x26, 0x77, 0xC4, 0x1D, 0x1E`             |
+
+## Encoding Algorithm
+
+* Initialize `x` to 12.
+* Initialize `y` to 10.
+* For each byte to encode:
+   * Read byte `b` from input.
+   * Subtract `x + 1` from `b`, truncating the result to 8 bits.
+   * Bitwise XOR `b` with `X[x]` and `Y[y]`.
+   * Add `y + 1` to `b`, truncating the result to 8 bits.
+   * Write `b` to output.
+   * Decrement `x`, setting it to 12 in case of underflow.
+   * Decrement `y`, setting it to 10 in case of underflow.
+
+## Decoding Algorithm
+
+* Initialize `x` to 12.
+* Initialize `y` to 10.
+* For each byte to decode:
+   * Read byte `b` from input.
+   * Subtract `y + 1` from `b`, truncating the result to 8 bits.
+   * Bitwise XOR `b` with `X[x]` and `Y[y]`.
+   * Add `x + 1` to `b`, truncating the result to 8 bits.
+   * Write `b` to output.
+   * Decrement `x`, setting it to 12 in case of underflow.
+   * Decrement `y`, setting it to 10 in case of underflow.
+
+## Example
+
+### Decoded
+
+```
+0x34 0x08 0x0A 0x00 0x91 0x20 0x22 0x48 0x65 0x6C 0x6C 0x6F 0x2C 0x20 0x77 0x6F
+0x72 0x6C 0x64 0x21 0x22 0x00 0x3A 0x08 0x14 0x00 0x81 0x00 0x00 0x00
+```
+
+### Encoded
+
+```
+0x9B 0x6F 0xBF 0x54 0xE2 0x12 0xBD 0x59 0x20 0x65 0x0D 0x8F 0xB6 0x87 0xA0 0xD6
+0x38 0xFB 0xAF 0x03 0xF9 0xA4 0xB6 0x0B 0x2A 0x1A 0x02 0xED 0x9D 0x53
+```
