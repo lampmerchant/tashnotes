@@ -14,7 +14,7 @@ Blocks of 256 bytes of data are written and read on the cassette followed by a 1
 
 ### CRC Algorithm
 
-The CRC at the end of each block uses the CCITT polynomial (0x1021).  The register is initialized to 0xFFFF and is complemented before being written to the cassette in big-endian order.  As such, the register should equal 0xE2F0 when a block followed by its correct CRC are fed into it.
+The CRC at the end of each block uses the CCITT polynomial (0x1021).  The register is initialized to 0xFFFF and is complemented before being written to the cassette in big-endian order.  As such, the register should equal 0x1D0F when a block followed by its correct CRC are fed into it.
 
 ## Section Format
 
