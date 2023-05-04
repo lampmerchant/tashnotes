@@ -38,12 +38,15 @@ Original Address 0x2
 
 Original Address 0x3
 
-| Handler ID   | Make            | Model Name      | Model Number | Description                 |
-| ------------ | --------------- | --------------- | ------------ | --------------------------- |
-| 0x01         | Apple           | Mouse           | A9M0031      | Mouse                       |
-| 0x23         | Advanced Gravis | MouseStick GMPU |              | 3-button joystick interface |
-| 0x23[^4]     | Advanced Gravis | MouseStick II   |              | 5-button joystick           |
-| 0x32[^3][^7] | Kensington      | Turbo Mouse     | 64210        | Trackball 4-button device   |
+| Handler ID   | Make            | Model Name        | Model Number | Description                 |
+| ------------ | --------------- | ----------------- | ------------ | --------------------------- |
+| 0x01         | Apple           | Mouse             | A9M0031      | Mouse                       |
+| 0x01         | Apple           | Mouse             | G5431        | Mouse                       |
+| 0x01         | Apple           | Mouse II          | M2706        | Mouse                       |
+| 0x23         | Advanced Gravis | MouseStick GMPU   |              | 3-button joystick interface |
+| 0x23[^4]     | Advanced Gravis | MouseStick II     |              | 5-button joystick           |
+| 0x32[^3][^7] | Kensington      | Turbo Mouse       | 64210        | Trackball 4-button device   |
+| 0x46[^4]     | Atmark          | Pippin Controller |              | Game controller             |
 
 ## Absolute Pointing Devices
 
