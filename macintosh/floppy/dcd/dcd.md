@@ -20,7 +20,7 @@ All signals from the IWM/SWIM are common to all floppy disk drive connectors in 
 | SE/30         | With Nonstandard ROM    | External 19-Pin D-Sub         | 2           |           |
 | IIcx          | With Nonstandard ROM    | External 19-Pin D-Sub         | 2           | demik     |
 | IIci          | In ROM                  | External 19-Pin D-Sub         | 2?          |           |
-| Portable      | In ROM                  | External 19-Pin D-Sub         | 2?          |           |
+| Portable      | In ROM                  | External 19-Pin D-Sub         | 2?          | WillJac   |
 | Classic       | In ROM                  | External 19-Pin D-Sub         | 2           | Tashtari  |
 | LC            | In ROM                  | Second Internal Floppy Header | 2?          |           |
 | IIsi          | In ROM                  | External 19-Pin D-Sub         | 2?          |           |
