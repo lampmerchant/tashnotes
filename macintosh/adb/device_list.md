@@ -45,6 +45,7 @@ Original Address 0x3
 | 0x01         | Apple           | Mouse II          | M2706        | Mouse                       |
 | 0x23         | Advanced Gravis | MouseStick GMPU   |              | 3-button joystick interface |
 | 0x23[^4]     | Advanced Gravis | MouseStick II     |              | 5-button joystick           |
+| 0x2F         | MicroSpeed      | MacTRAC 2.0       | FUUTB02      | Trackball                   |
 | 0x32[^3][^7] | Kensington      | Turbo Mouse       | 64210        | Trackball 4-button device   |
 | 0x46[^4]     | Atmark          | Pippin Controller |              | Game controller             |
 
