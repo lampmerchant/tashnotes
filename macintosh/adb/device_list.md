@@ -22,7 +22,8 @@ Original Address 0x2
 | 0x02          | Apple | AppleDesign Keyboard               | M2980        | Keyboard    |
 | 0x04[^5]      | Apple | Keyboard ISO                       | M0118[^6]    | Keyboard    |
 | 0x05[^5]      | Apple | Extended Keyboard ISO              | M0115[^6]    | Keyboard    |
-| 0x05          | Apple | Extended Keyboard II ISO           | M3501        | Keyboard    |
+| 0x05[^9]      | Apple | Extended Keyboard II ISO           | M3501        | Keyboard    |
+| 0x05[^9]      | Apple | AppleDesign Keyboard ISO           | M2980        | Keyboard    |
 | 0x06[^5]      | Apple | Portable Keyboard                  | ?            | Keyboard    |
 | 0x07[^5]      | Apple | Portable Keyboard ISO              | ?            | Keyboard    |
 | 0x08          | Apple | Keyboard II                        | M0487        | Keyboard    |
@@ -44,7 +45,7 @@ Original Address 0x3
 | 0x01         | Apple           | Mouse             | A9M0031      | Mouse                       |
 | 0x01         | Apple           | Mouse             | G5431        | Mouse                       |
 | 0x01         | Apple           | Mouse II          | M2706        | Mouse                       |
-| 0x01         | NeXT            | Mouse             | N8003        | Mouse                       |
+| 0x01[^9]     | NeXT            | Mouse             | N8003        | Mouse                       |
 | 0x23         | Advanced Gravis | MouseStick GMPU   |              | 3-button joystick interface |
 | 0x23[^4]     | Advanced Gravis | MouseStick II     |              | 5-button joystick           |
 | 0x2F         | MicroSpeed      | MacTRAC 2.0       | FUUTB02      | Trackball                   |
@@ -89,4 +90,5 @@ Original Address 0x7
 [^6]: [Source](https://github.com/tmk/tmk_keyboard/wiki/Apple-Desktop-Bus#keyboard-handler-id)
 [^7]: Source Jockelill on 68kMLA
 [^8]: Source Velociraptors on 68kMLA
+[^9]: Source demik on 68kMLA
 [^10]: [Source](https://web.archive.org/web/19980501032801/http://www.bzzzzzz.com:80/BeeHive/ADB_IO/Downloads/ADB_IO_manual.pdf)
