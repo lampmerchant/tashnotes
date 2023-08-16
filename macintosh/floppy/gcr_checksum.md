@@ -253,5 +253,5 @@ def unmangle(data):
 
 ## References
 
-  * [[http://bitsavers.org/pdf/apple/disk/sony/uPD72070_Specification_1991.pdf|uPD72070 Floppy Disk Controller Specification]], Page 6
-  * [[http://bitsavers.org/pdf/apple/disk/sony/SWIM_Chip_Users_Ref_198801.pdf|SWIM Chip User's Reference, Revision 1.5 (11-Jan-1988)]], Page 6
+  * [uPD72070 Floppy Disk Controller Specification](http://bitsavers.org/pdf/apple/disk/sony/uPD72070_Specification_1991.pdf), Page 6
+  * [SWIM Chip User's Reference, Revision 1.5 (11-Jan-1988)](http://bitsavers.org/pdf/apple/disk/sony/SWIM_Chip_Users_Ref_198801.pdf), Page 6
