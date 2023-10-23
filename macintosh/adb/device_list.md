@@ -28,8 +28,9 @@ Original Address 0x2
 | 0x07[^5]      | Apple | Portable Keyboard ISO              | ?            | Keyboard    |
 | 0x08          | Apple | Keyboard II                        | M0487        | Keyboard    |
 | 0x09[^5]      | Apple | Keyboard II ISO                    | ?            | Keyboard    |
-| 0x0A/0x0C[^5] | Apple | Powerbook 100/140/170 Keyboard     | ?            | Keyboard    |
-| 0x0D[^5]      | Apple | Powerbook 100/140/170 Keyboard ISO | ?            | Keyboard    |
+| 0x0A/0x0C[^5] | Apple | PowerBook 100/140/170 Keyboard     | ?            | Keyboard    |
+| 0x0C[^11]     | Apple | PowerBook Duo 230 Keyboard         | ?            | Keyboard    |
+| 0x0D[^5]      | Apple | PowerBook 100/140/170 Keyboard ISO | ?            | Keyboard    |
 | 0x0E[^5]      | Apple | Adjustable Keyboard Keypad         | M1242[^6]    | Keypad      |
 | 0x10[^5]      | Apple | Adjustable Keyboard                | M1242[^6]    | Keyboard    |
 | 0x11[^5]      | Apple | Adjustable Keyboard ISO            | ?            | Keyboard    |
@@ -40,17 +41,19 @@ Original Address 0x2
 
 Original Address 0x3
 
-| Handler ID   | Make            | Model Name        | Model Number | Description                 |
-| ------------ | --------------- | ----------------- | ------------ | --------------------------- |
-| 0x01         | Apple           | Mouse             | A9M0031      | Mouse                       |
-| 0x01         | Apple           | Mouse             | G5431        | Mouse                       |
-| 0x01         | Apple           | Mouse II          | M2706        | Mouse                       |
-| 0x01[^9]     | NeXT            | Mouse             | N8003        | Mouse                       |
-| 0x23         | Advanced Gravis | MouseStick GMPU   |              | 3-button joystick interface |
-| 0x23[^4]     | Advanced Gravis | MouseStick II     |              | 5-button joystick           |
-| 0x2F         | MicroSpeed      | MacTRAC 2.0       | FUUTB02      | Trackball                   |
-| 0x32[^3][^7] | Kensington      | Turbo Mouse       | 64210        | Trackball 4-button device   |
-| 0x46[^4]     | Atmark          | Pippin Controller |              | Game controller             |
+| Handler ID   | Make            | Model Name                  | Model Number | Description                 |
+| ------------ | --------------- | --------------------------- | ------------ | --------------------------- |
+| 0x01         | Apple           | Mouse                       | A9M0031      | Mouse                       |
+| 0x01         | Apple           | Mouse                       | G5431        | Mouse                       |
+| 0x01         | Apple           | Mouse II                    | M2706        | Mouse                       |
+| 0x01[^9]     | NeXT            | Mouse                       | N8003        | Mouse                       |
+| 0x02[^11]    | Apple           | PowerBook Duo 230 Trackball |              | Trackball                   |
+| 0x23         | Advanced Gravis | MouseStick GMPU             |              | 3-button joystick interface |
+| 0x23[^4]     | Advanced Gravis | MouseStick II               |              | 5-button joystick           |
+| 0x2F         | MicroSpeed      | MacTRAC 2.0                 | FUUTB02      | Trackball                   |
+| 0x32[^3][^7] | Kensington      | Turbo Mouse                 | 64210        | Trackball 4-button device   |
+| 0x40[^11]    | Alps            | GlidePoint                  |              | Trackpad                    |
+| 0x46[^4]     | Atmark          | Pippin Controller           |              | Game controller             |
 
 ## Absolute Pointing Devices
 
@@ -67,6 +70,14 @@ Original Address 0x5
 | Handler ID | Make           | Model Name   | Model Number | Description     |
 | ---------- | -------------- | ------------ | ------------ | --------------- |
 | 0x36[^1]   | Global Village | TelePort ADB | A300         | 2400-baud modem |
+
+## PowerBook Duo Charger
+
+Original Address 0x6
+
+| Handler ID | Make  | Model Name            | Model Number | Description           |
+| ---------- | ----- | --------------------- | ------------ | --------------------- |
+| 0x01[^11]  | Apple | PowerBook Duo Charger | M1812        | PowerBook Duo Charger |
 
 ## Other Devices
 
@@ -92,3 +103,4 @@ Original Address 0x7
 [^8]: Source Velociraptors on 68kMLA
 [^9]: Source demik on 68kMLA
 [^10]: [Source](https://web.archive.org/web/19980501032801/http://www.bzzzzzz.com:80/BeeHive/ADB_IO/Downloads/ADB_IO_manual.pdf)
+[^11]: Source mdeverhart on 68kMLA
