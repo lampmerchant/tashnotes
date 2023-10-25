@@ -5,6 +5,6 @@
 | Apple Desktop Bus Mouse         | A9M0331      | Yes  | Yes  | No   |
 | Apple Desktop Bus Mouse         | G5431        | Yes  | Yes  | No   |
 | Apple Desktop Bus Mouse II      | M2706        | Yes  | Yes  | No   |
-| PowerBook Duo 230 Trackball[^1] |              | ?    | Yes  | Yes  |
+| PowerBook Duo 230 Trackball[^1] |              | Yes  | Yes  | Yes  |
 
 [^1]: Source mdeverhart on 68kMLA
