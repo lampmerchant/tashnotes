@@ -89,6 +89,7 @@ Original Address 0x7
 | 0x22       | Sophisticated Circuits | PowerKey              | PK-1         | Relay-controlled power strip                |
 | 0x35[^7]   | Neotech                | Colour Adapter Module |              | Module for Neotech Image Grabber NuBus card |
 | 0x41       | JLCooper Electronics   | Media Control Station | 300007       | Jog dial and media control device           |
+| 0x67[^12]  | HASP                   | MacHASP-M             | KSWAVESO B   | License dongle                              |
 | 0x79[^2]   | LaCie                  | FM Radio              | ?            | FM radio                                    |
 | 0x7A[^10]  | BeeHive Technologies   | ADB I/O               |              | Analog and digital I/O interface            |
 | 0x87       | Sophisticated Circuits | PowerKey Rebound!     | PKRB-M       | Watchdog timer                              |
@@ -104,3 +105,4 @@ Original Address 0x7
 [^9]: Source demik on 68kMLA
 [^10]: [Source](https://web.archive.org/web/19980501032801/http://www.bzzzzzz.com:80/BeeHive/ADB_IO/Downloads/ADB_IO_manual.pdf)
 [^11]: Source mdeverhart on 68kMLA
+[^12]: Source ArmorAlley on 68kMLA
