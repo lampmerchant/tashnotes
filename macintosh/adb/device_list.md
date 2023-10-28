@@ -67,9 +67,10 @@ Original Address 0x4
 
 Original Address 0x5
 
-| Handler ID | Make           | Model Name   | Model Number | Description     |
-| ---------- | -------------- | ------------ | ------------ | --------------- |
-| 0x36[^1]   | Global Village | TelePort ADB | A300         | 2400-baud modem |
+| Handler ID | Make           | Model Name   | Model Number | Description         |
+| ---------- | -------------- | ------------ | ------------ | ------------------- |
+| 0x36[^1]   | Global Village | TelePort ADB | A300         | 2400-baud modem     |
+| 0x37       | Global Village | TelePort ADB | A400         | 4800-baud fax/modem |
 
 ## PowerBook Duo Charger
 
