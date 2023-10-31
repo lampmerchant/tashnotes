@@ -14,28 +14,29 @@ Original Address 0x1
 
 Original Address 0x2
 
-| Handler ID    | Make  | Model Name                         | Model Number | Description |
-| ------------- | ----- | ---------------------------------- | ------------ | ----------- |
-| 0x01          | Apple | Keyboard                           | M0116        | Keyboard    |
-| 0x02          | Apple | Extended Keyboard                  | M0115        | Keyboard    |
-| 0x02          | Apple | Extended Keyboard II               | M3501        | Keyboard    |
-| 0x02          | Apple | AppleDesign Keyboard               | M2980        | Keyboard    |
-| 0x04[^5]      | Apple | Keyboard ISO                       | M0118[^6]    | Keyboard    |
-| 0x05[^5]      | Apple | Extended Keyboard ISO              | M0115[^6]    | Keyboard    |
-| 0x05[^9]      | Apple | Extended Keyboard II ISO           | M3501        | Keyboard    |
-| 0x05[^9]      | Apple | AppleDesign Keyboard ISO           | M2980        | Keyboard    |
-| 0x06[^5]      | Apple | Portable Keyboard                  | ?            | Keyboard    |
-| 0x07[^5]      | Apple | Portable Keyboard ISO              | ?            | Keyboard    |
-| 0x08          | Apple | Keyboard II                        | M0487        | Keyboard    |
-| 0x09[^5]      | Apple | Keyboard II ISO                    | ?            | Keyboard    |
-| 0x0A/0x0C[^5] | Apple | PowerBook 100/140/170 Keyboard     | ?            | Keyboard    |
-| 0x0C[^11]     | Apple | PowerBook Duo 230 Keyboard         | ?            | Keyboard    |
-| 0x0D[^5]      | Apple | PowerBook 100/140/170 Keyboard ISO | ?            | Keyboard    |
-| 0x0E[^5]      | Apple | Adjustable Keyboard Keypad         | M1242[^6]    | Keypad      |
-| 0x10[^5]      | Apple | Adjustable Keyboard                | M1242[^6]    | Keyboard    |
-| 0x11[^5]      | Apple | Adjustable Keyboard ISO            | ?            | Keyboard    |
-| 0x12[^6]      | Apple | Adjustable Keyboard JIS            | ?            | Keyboard    |
-| 0x16[^6]      | Apple | Keyboard II JIS                    | M0487[^6]    | Keyboard    |
+| Handler ID    | Make            | Model Name                         | Model Number | Description     |
+| ------------- | --------------- | ---------------------------------- | ------------ | -----------     |
+| 0x01          | Apple           | Keyboard                           | M0116        | Keyboard        |
+| 0x02          | Apple           | Extended Keyboard                  | M0115        | Keyboard        |
+| 0x02          | Apple           | Extended Keyboard II               | M3501        | Keyboard        |
+| 0x02          | Apple           | AppleDesign Keyboard               | M2980        | Keyboard        |
+| 0x04[^5]      | Apple           | Keyboard ISO                       | M0118[^6]    | Keyboard        |
+| 0x05[^5]      | Apple           | Extended Keyboard ISO              | M0115[^6]    | Keyboard        |
+| 0x05[^9]      | Apple           | Extended Keyboard II ISO           | M3501        | Keyboard        |
+| 0x05[^9]      | Apple           | AppleDesign Keyboard ISO           | M2980        | Keyboard        |
+| 0x06[^5]      | Apple           | Portable Keyboard                  | ?            | Keyboard        |
+| 0x07[^5]      | Apple           | Portable Keyboard ISO              | ?            | Keyboard        |
+| 0x08          | Apple           | Keyboard II                        | M0487        | Keyboard        |
+| 0x09[^5]      | Apple           | Keyboard II ISO                    | ?            | Keyboard        |
+| 0x0A/0x0C[^5] | Apple           | PowerBook 100/140/170 Keyboard     | ?            | Keyboard        |
+| 0x0C[^11]     | Apple           | PowerBook Duo 230 Keyboard         | ?            | Keyboard        |
+| 0x0D[^5]      | Apple           | PowerBook 100/140/170 Keyboard ISO | ?            | Keyboard        |
+| 0x0E[^5]      | Apple           | Adjustable Keyboard Keypad         | M1242[^6]    | Keypad          |
+| 0x10[^5]      | Apple           | Adjustable Keyboard                | M1242[^6]    | Keyboard        |
+| 0x11[^5]      | Apple           | Adjustable Keyboard ISO            | ?            | Keyboard        |
+| 0x12[^6]      | Apple           | Adjustable Keyboard JIS            | ?            | Keyboard        |
+| 0x16[^6]      | Apple           | Keyboard II JIS                    | M0487[^6]    | Keyboard        |
+| 0x34[^13]     | Advanced Gravis | Mac GamePad                        |              | Game controller |
 
 ## Relative Pointing Devices
 
@@ -107,3 +108,4 @@ Original Address 0x7
 [^10]: [Source](https://web.archive.org/web/19980501032801/http://www.bzzzzzz.com:80/BeeHive/ADB_IO/Downloads/ADB_IO_manual.pdf)
 [^11]: Source mdeverhart on 68kMLA
 [^12]: Source ArmorAlley on 68kMLA
+[^13]: Initially has handler ID 0x02.
