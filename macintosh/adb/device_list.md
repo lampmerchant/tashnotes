@@ -42,19 +42,20 @@ Original Address 0x2
 
 Original Address 0x3
 
-| Handler ID   | Make            | Model Name                  | Model Number | Description                 |
-| ------------ | --------------- | --------------------------- | ------------ | --------------------------- |
-| 0x01         | Apple           | Mouse                       | A9M0031      | Mouse                       |
-| 0x01         | Apple           | Mouse                       | G5431        | Mouse                       |
-| 0x01         | Apple           | Mouse II                    | M2706        | Mouse                       |
-| 0x01[^9]     | NeXT            | Mouse                       | N8003        | Mouse                       |
-| 0x02[^11]    | Apple           | PowerBook Duo 230 Trackball |              | Trackball                   |
-| 0x23         | Advanced Gravis | MouseStick GMPU             |              | 3-button joystick interface |
-| 0x23[^4]     | Advanced Gravis | MouseStick II               |              | 5-button joystick           |
-| 0x2F         | MicroSpeed      | MacTRAC 2.0                 | FUUTB02      | Trackball                   |
-| 0x32[^3][^7] | Kensington      | Turbo Mouse                 | 64210        | Trackball 4-button device   |
-| 0x40[^11]    | Alps            | GlidePoint                  |              | Trackpad                    |
-| 0x46[^4]     | Atmark          | Pippin Controller           |              | Game controller             |
+| Handler ID   | Make            | Model Name                  | Model Number      | Description                 |
+| ------------ | --------------- | --------------------------- | ----------------- | --------------------------- |
+| 0x01         | Apple           | Mouse                       | A9M0031           | Mouse                       |
+| 0x01         | Apple           | Mouse                       | G5431             | Mouse                       |
+| 0x01         | Apple           | Mouse II                    | M2706             | Mouse                       |
+| 0x01[^9]     | NeXT            | Mouse                       | N8003             | Mouse                       |
+| 0x01         | Logitech        | TrackMan Stationary Mouse   | T-AE2 / 804071-00 | Trackball                   |
+| 0x02[^11]    | Apple           | PowerBook Duo 230 Trackball |                   | Trackball                   |
+| 0x23         | Advanced Gravis | MouseStick GMPU             |                   | 3-button joystick interface |
+| 0x23[^4]     | Advanced Gravis | MouseStick II               |                   | 5-button joystick           |
+| 0x2F         | MicroSpeed      | MacTRAC 2.0                 | FUUTB02           | Trackball                   |
+| 0x32[^3][^7] | Kensington      | Turbo Mouse                 | 64210             | Trackball 4-button device   |
+| 0x40[^11]    | Alps            | GlidePoint                  |                   | Trackpad                    |
+| 0x46[^4]     | Atmark          | Pippin Controller           |                   | Game controller             |
 
 ## Absolute Pointing Devices
 
