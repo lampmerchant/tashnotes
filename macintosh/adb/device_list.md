@@ -6,9 +6,9 @@ This is an obviously-incomplete list of known ADB devices and their identifying 
 
 Original Address 0x1
 
-| Address | Handler ID | Make                 | Model Name    | Model Number | Description    | Source   |
-| ------- | ---------- | -------------------- | ------------- | ------------ | -------------- | -------- |
-| 0x1     | 0x34       | Rainbow Technologies | Sentinel Eve3 |              | License dongle | Tashtari |
+| Handler ID | Make                 | Model Name    | Model Number | Description    | Source   |
+| ---------- | -------------------- | ------------- | ------------ | -------------- | -------- |
+| 0x34       | Rainbow Technologies | Sentinel Eve3 |              | License dongle | Tashtari |
 
 ## Encoded Devices
 
