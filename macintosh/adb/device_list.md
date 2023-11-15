@@ -58,6 +58,7 @@ Original Address 0x3
 | 0x40[^1]     | Alps            | GlidePoint                  |                   | Trackpad                    | mdeverhart@68kMLA |
 | 0x40[^1][^4] | Alps            | GlidePoint Keypad           | FGS018-00         | Keypad/trackpad             | Tashtari          |
 | 0x46[^1]     | Atmark          | Pippin Controller           |                   | Game controller             | Tashtari          |
+| 0x4E[^1]     | Advanced Gravis | Blackhawk                   |                   | 4-button joystick           | demik@68kMLA      |
 
 ## Absolute Pointing Devices
 
