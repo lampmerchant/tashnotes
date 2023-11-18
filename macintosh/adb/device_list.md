@@ -45,9 +45,9 @@ Original Address 0x3
 
 | Handler ID   | Make            | Model Name                  | Model Number      | Description                 | Source            |
 | ------------ | --------------- | --------------------------- | ----------------- | --------------------------- | ----------------- |
-| 0x01         | Apple           | Mouse                       | A9M0031           | Mouse                       | Tashtari          |
-| 0x01         | Apple           | Mouse                       | G5431             | Mouse                       | Tashtari          |
-| 0x01         | Apple           | Mouse II                    | M2706             | Mouse                       | Tashtari          |
+| 0x01         | Apple           | Apple Desktop Bus Mouse     | A9M0031           | Mouse                       | Tashtari          |
+| 0x01         | Apple           | Apple Desktop Bus Mouse     | G5431             | Mouse                       | Tashtari          |
+| 0x01         | Apple           | Apple Desktop Bus Mouse II  | M2706             | Mouse                       | Tashtari          |
 | 0x01         | NeXT            | Mouse                       | N8003             | Mouse                       | demik@68kMLA      |
 | 0x01         | Logitech        | TrackMan Stationary Mouse   | T-AE2 / 804071-00 | Trackball                   | Tashtari          |
 | 0x02         | Apple           | PowerBook Duo 230 Trackball |                   | Trackball                   | mdeverhart@68kMLA |
