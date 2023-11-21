@@ -60,6 +60,7 @@ Original Address 0x3
 | 0x40[^1][^4] | Alps            | GlidePoint Keypad           | FGS018-00         | Keypad/trackpad             | Tashtari          |
 | 0x46[^1]     | Atmark          | Pippin Controller           |                   | Game controller             | Tashtari          |
 | 0x4E[^1]     | Advanced Gravis | Blackhawk                   |                   | 4-button joystick           | demik@68kMLA      |
+| 0x4E[^1][^5] | Advanced Gravis | Firebird                    |                   | 17-button joystick          | Tashtari          |
 
 ## Absolute Pointing Devices
 
@@ -111,4 +112,5 @@ Original Address 0x7
 [^2]: Initially has handler ID 0x02.
 [^3]: Also emulates a standard mouse on address 0x3.
 [^4]: Only mouse device can be set to handler ID 0x40.
+[^5]: Also responds to handler ID 0x23.
 [^7]: Also known to use default address 0x7.
