@@ -10,5 +10,6 @@
 | Kensington | Turbo Mouse                 | 64210             | Yes  | Yes  | Yes     | Tashtari          |
 | Logitech   | TrackMan Stationary Mouse   | T-AE2 / 804071-00 | Yes  | Yes  | Yes     | Tashtari          |
 | Apple      | PowerBook Duo 230 Trackball |                   | Yes  | Yes  | Yes     | mdeverhart@68kMLA |
+| MacAlly    | One Button Mouse            |                   | Yes  | Yes  | Yes     | Tashtari          |
 
 [^1]: Some ADB Mouse IIs do not support handler 0x04.

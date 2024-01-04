@@ -50,6 +50,7 @@ Original Address 0x3
 | 0x01         | Apple           | Apple Desktop Bus Mouse II  | M2706             | Mouse                       | Tashtari          |
 | 0x01         | NeXT            | Mouse                       | N8003             | Mouse                       | demik@68kMLA      |
 | 0x01         | Logitech        | TrackMan Stationary Mouse   | T-AE2 / 804071-00 | Trackball                   | Tashtari          |
+| 0x01         | MacAlly         | One Button Mouse            |                   | Mouse                       | Tashtari          |
 | 0x02         | Apple           | PowerBook Duo 230 Trackball |                   | Trackball                   | mdeverhart@68kMLA |
 | 0x23         | Advanced Gravis | MouseStick GMPU             |                   | 3-button joystick interface | Tashtari          |
 | 0x23[^1]     | Advanced Gravis | MouseStick II               |                   | 5-button joystick           | Tashtari          |
