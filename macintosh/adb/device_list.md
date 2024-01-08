@@ -56,6 +56,7 @@ Original Address 0x3
 | 0x23[^1]     | Advanced Gravis | MouseStick II               |                   | 5-button joystick           | Tashtari          |
 | 0x2F         | MicroSpeed      | MacTRAC 2.0                 | 9507              | Trackball                   | Tashtari          |
 | 0x32[^3]     | Kensington      | Mouse-in-a-Box              | 65206             | Mouse                       | demik@68kMLA      |
+| 0x32[^3]     | Kensington      | Mouse ADB                   | 64205             | Mouse                       | Tashtari          |
 | 0x32[^3]     | Kensington      | Turbo Mouse                 | 64210             | Trackball 4-button device   | Tashtari          |
 | 0x40[^1]     | Alps            | GlidePoint                  |                   | Trackpad                    | mdeverhart@68kMLA |
 | 0x40[^1][^4] | Alps            | GlidePoint Keypad           | FGS018-00         | Keypad/trackpad             | Tashtari          |
