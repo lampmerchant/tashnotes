@@ -80,6 +80,7 @@ Original Address 0x5
 
 | Handler ID | Make           | Model Name   | Model Number | Description              | Source   |
 | ---------- | -------------- | ------------ | ------------ | ------------------------ | -------- |
+| 0x03       | MacAlly        | JoyStick     |              | Joystick                 | Tashtari |
 | 0x36[^7]   | Global Village | TelePort ADB | A300         | 2400-baud modem          | Tashtari |
 | 0x37       | Global Village | TelePort ADB | A400         | 4800/9600-baud fax/modem | Tashtari |
 
