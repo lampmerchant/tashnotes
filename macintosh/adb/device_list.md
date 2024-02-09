@@ -51,6 +51,7 @@ Original Address 0x3
 | 0x01         | NeXT            | Mouse                       | N8003             | Mouse                       | demik@68kMLA      |
 | 0x01         | Logitech        | TrackMan Stationary Mouse   | T-AE2 / 804071-00 | Trackball                   | Tashtari          |
 | 0x01         | MacAlly         | One Button Mouse            |                   | Mouse                       | Tashtari          |
+| 0x01         | CH Products     | Jetstick                    | JS165M            | 2-button joystick           | Tashtari          |
 | 0x02         | Apple           | PowerBook Duo 230 Trackball |                   | Trackball                   | mdeverhart@68kMLA |
 | 0x23         | Advanced Gravis | MouseStick GMPU             |                   | 3-button joystick interface | Tashtari          |
 | 0x23[^1]     | Advanced Gravis | MouseStick II               |                   | 5-button joystick           | Tashtari          |
@@ -68,11 +69,12 @@ Original Address 0x3
 
 Original Address 0x4
 
-| Handler ID | Make  | Model Name              | Model Number | Description     | Source            |
-| ---------- | ----- | ----------------------- | ------------ | --------------- | ----------------- |
-| 0x21       | Kurta | IS/ADB 12x17            | ?            | Graphics tablet | ArmorAlley@68kMLA |
-| 0x3A[^3]   | Wacom | ArtPad II               | KT-0405-A    | Graphics tablet | ArmorAlley@68kMLA |
-| 0x3A[^3]   | Wacom | ArtZ 6x8 / Digitizer II | UD-0608-A    | Graphics tablet | Tashtari          |
+| Handler ID | Make      | Model Name              | Model Number | Description     | Source            |
+| ---------- | --------- | ----------------------- | ------------ | --------------- | ----------------- |
+| 0x02       | Microtech | UnMouse                 | UN1000       | Touchpad        | Tashtari          |
+| 0x21       | Kurta     | IS/ADB 12x17            | ?            | Graphics tablet | ArmorAlley@68kMLA |
+| 0x3A[^3]   | Wacom     | ArtPad II               | KT-0405-A    | Graphics tablet | ArmorAlley@68kMLA |
+| 0x3A[^3]   | Wacom     | ArtZ 6x8 / Digitizer II | UD-0608-A    | Graphics tablet | Tashtari          |
 
 ## Low-Speed Serial Devices
 
