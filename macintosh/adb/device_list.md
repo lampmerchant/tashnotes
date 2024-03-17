@@ -25,6 +25,7 @@ Original Address 0x2
 | 0x05       | Apple           | Extended Keyboard ISO              | M0115        | Keyboard        | [Link][1] [Link][2] |
 | 0x05       | Apple           | Extended Keyboard II ISO           | M3501        | Keyboard        | demik@68kMLA        |
 | 0x05       | Apple           | AppleDesign Keyboard ISO           | M2980        | Keyboard        | demik@68kMLA        |
+| 0x05       | MacAlly         | MacAlly-MK                         | 105X         | Keyboard        | demik@68kMLA        |
 | 0x06       | Apple           | Portable Keyboard                  | ?            | Keyboard        | [Link][1]           |
 | 0x07       | Apple           | Portable Keyboard ISO              | ?            | Keyboard        | [Link][1]           |
 | 0x08       | Apple           | Keyboard II                        | M0487        | Keyboard        | Tashtari            |
