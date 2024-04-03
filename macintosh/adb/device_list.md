@@ -108,9 +108,9 @@ Original Address 0x7
 | 0x35       | Neotech                | Colour Adapter Module |              | Module for Neotech Image Grabber NuBus card | Jockelill@68kMLA     |
 | 0x41       | JLCooper Electronics   | Media Control Station | 300007       | Jog dial and media control device           | Tashtari             |
 | 0x67       | HASP                   | MacHASP-M             | KSWAVESO B   | License dongle                              | ArmorAlley@68kMLA    |
+| 0x71       | Sophisticated Circuits | PowerKey Pro 200      | PK3M1        | Relay-controlled power strip                | Tashtari             |
 | 0x79       | LaCie                  | FM Radio              |              | FM radio                                    | Tashtari             |
 | 0x7A       | BeeHive Technologies   | ADB I/O               |              | Analog and digital I/O interface            | [Link][3]            |
-| 0x71       | Sophisticated Circuits | PowerKey Pro 200      | PK3M1        | Relay-controlled power strip                | Tashtari             |
 | 0x87       | Sophisticated Circuits | PowerKey Rebound!     | PKRB-M       | Watchdog timer                              | Tashtari             |
 
 [1]: https://github.com/elliotnunn/boot3/blob/f5582f37d04819abec51525ade1e021858a914e1/OS/Keyboard/Kbd.r
