@@ -52,6 +52,7 @@ Original Address 0x3
 | 0x01         | NeXT            | Mouse                       | N8003             | Mouse                       | demik@68kMLA      |
 | 0x01         | Logitech        | TrackMan Stationary Mouse   | T-AE2 / 804071-00 | Trackball                   | Tashtari          |
 | 0x01         | MacAlly         | One Button Mouse            |                   | Mouse                       | Tashtari          |
+| 0x01         | CH Products     | Flightstick Pro             | FSP 865M          | 4-button joystick           | Tashtari          |
 | 0x01         | CH Products     | Jetstick                    | JS165M            | 2-button joystick           | Tashtari          |
 | 0x02         | Apple           | PowerBook Duo 230 Trackball |                   | Trackball                   | mdeverhart@68kMLA |
 | 0x23         | Advanced Gravis | MouseStick GMPU             |                   | 3-button joystick interface | Tashtari          |
@@ -91,9 +92,10 @@ Original Address 0x5
 
 Original Address 0x6
 
-| Handler ID | Make  | Model Name            | Model Number | Description           | Source            |
-| ---------- | ----- | --------------------- | ------------ | --------------------- | ----------------- |
-| 0x01       | Apple | PowerBook Duo Charger | M1812        | PowerBook Duo Charger | mdeverhart@68kMLA |
+| Handler ID | Make    | Model Name            | Model Number | Description             | Source            |
+| ---------- | ------- | --------------------- | ------------ | ----------------------- | ----------------- |
+| 0x01       | Apple   | PowerBook Duo Charger | M1812        | PowerBook Duo Charger   | mdeverhart@68kMLA |
+| 0x9A       | MacAlly | PortXpander           | ESS-03       | Serial port multiplexer | Tashtari          |
 
 ## Other Devices
 
@@ -108,6 +110,7 @@ Original Address 0x7
 | 0x67       | HASP                   | MacHASP-M             | KSWAVESO B   | License dongle                              | ArmorAlley@68kMLA    |
 | 0x79       | LaCie                  | FM Radio              |              | FM radio                                    | Tashtari             |
 | 0x7A       | BeeHive Technologies   | ADB I/O               |              | Analog and digital I/O interface            | [Link][3]            |
+| 0x71       | Sophisticated Circuits | PowerKey Pro 200      | PK3M1        | Relay-controlled power strip                | Tashtari             |
 | 0x87       | Sophisticated Circuits | PowerKey Rebound!     | PKRB-M       | Watchdog timer                              | Tashtari             |
 
 [1]: https://github.com/elliotnunn/boot3/blob/f5582f37d04819abec51525ade1e021858a914e1/OS/Keyboard/Kbd.r
