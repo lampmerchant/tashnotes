@@ -8,6 +8,8 @@ The JoyStick presents itself on the ADB at address 0x5 with handler 0x03.  The h
 
 In mouse mode, the JoyStick imitates the standard Apple mouse protocol, attempting to correspond the center of the joystick to the center of the screen.  Both joystick buttons actuate the main mouse button.  This mode does not work as intended because the JoyStick's initial device address is 0x5 rather than 0x3.
 
+Why the JoyStick uses address 0x5 instead of 0x3 is unknown.  It is possible, though only speculation, that Apple began allocating handler IDs on address 0x5 after all handler IDs on address 0x3 were used and that, at the time of the handler ID on address 0x5 being assigned, firmware had already been written with the assumption that a handler ID on address 0x3 would be assigned.
+
 ### Joystick Mode
 
 In joystick mode, Talk 0 gives joystick position information and button state as a five-byte string:
