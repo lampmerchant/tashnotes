@@ -25,3 +25,7 @@ Male to PowerKey:   Male to Mac:       Female to Keyboard:
 | -        | 3   | 3        | 5VDC                                                                     |
 
 Pin 4 on the PowerKey connector is not connected.
+
+### Thanks
+
+Thanks to tvj on the 68kMLA forum for providing this!
