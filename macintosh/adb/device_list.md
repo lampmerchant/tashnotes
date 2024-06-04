@@ -71,12 +71,13 @@ Original Address 0x3
 
 Original Address 0x4
 
-| Handler ID | Make      | Model Name              | Model Number | Description     | Source            |
-| ---------- | --------- | ----------------------- | ------------ | --------------- | ----------------- |
-| 0x02       | Microtech | UnMouse                 | UN1000       | Touchpad        | Tashtari          |
-| 0x21       | Kurta     | IS/ADB 12x17            | ?            | Graphics tablet | ArmorAlley@68kMLA |
-| 0x3A[^3]   | Wacom     | ArtPad II               | KT-0405-A    | Graphics tablet | ArmorAlley@68kMLA |
-| 0x3A[^3]   | Wacom     | ArtZ 6x8 / Digitizer II | UD-0608-A    | Graphics tablet | Tashtari          |
+| Handler ID | Make      | Model Name              | Model Number | Description       | Source            |
+| ---------- | --------- | ----------------------- | ------------ | ----------------- | ----------------- |
+| 0x02       | Microtech | UnMouse                 | UN1000       | Touchpad          | Tashtari          |
+| 0x21       | Kurta     | IS/ADB 12x17            | ?            | Graphics tablet   | ArmorAlley@68kMLA |
+| 0x3A[^3]   | Wacom     | ArtPad II               | KT-0405-A    | Graphics tablet   | ArmorAlley@68kMLA |
+| 0x3A[^3]   | Wacom     | ArtZ 6x8 / Digitizer II | UD-0608-A    | Graphics tablet   | Tashtari          |
+| 0x5D[^3]   | Microsoft | Sidewinder 3D Pro       | 94231        | 8-button joystick | demik@68kMLA      |
 
 ## Low-Speed Serial Devices
 
