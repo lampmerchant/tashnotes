@@ -1,6 +1,6 @@
 # Gravis BlackHawk
 
-The Gravis BlackHawk first appears with address 0x3 and handler ID 0x01, but the Gravis BlackHawk INIT changes the handler ID to 0x4E when it loads, which enables the following output formats.
+The Gravis BlackHawk first appears with address 0x3 and handler ID 0x01, but the Gravis BlackHawk INIT changes the handler ID to 0x4E when it loads, which enables the following output formats.  The INIT may also change the handler ID to 0x23 if it is configured to MouseStick mode, but this does not appear to change the format of its output.
 
 
 ## Registers
