@@ -1,6 +1,6 @@
-# Gravis BlackHawk
+# Gravis Blackhawk
 
-The Gravis BlackHawk first appears with address 0x3 and handler ID 0x01, but the Gravis BlackHawk INIT changes the handler ID to 0x4E when it loads, which enables the following output formats.  The INIT may also change the handler ID to 0x23 if it is configured to MouseStick mode, but this does not appear to change the format of its output.
+The Gravis Blackhawk first appears with address 0x3 and handler ID 0x01, but the Gravis Blackhawk INIT changes the handler ID to 0x4E when it loads, which enables the following output formats.  The INIT may also change the handler ID to 0x23 if it is configured to MouseStick mode, but this does not appear to change the format of its output.
 
 
 ## Registers
@@ -29,7 +29,7 @@ Talk 1 always gives the response 0x0A 0x06 0x01.  This is likely a protocol iden
 
 ## Relationship to Gravis Firebird
 
-The BlackHawk's protocol is similar to the Firebird's, though stripped down considerably.  The driver's readme (dated 12 November 1996) notes that the BlackHawk driver should load before the Firebird driver if both are in use - this is likely because they use the same ADB handler ID and the BlackHawk is newer than the Firebird.
+The Blackhawk's protocol is similar to the Firebird's, though stripped down considerably.  The driver's readme (dated 12 November 1996) notes that the Blackhawk driver should load before the Firebird driver if both are in use - this is likely because they use the same ADB handler ID and the Blackhawk is newer than the Firebird.
 
 
 ## Thanks
