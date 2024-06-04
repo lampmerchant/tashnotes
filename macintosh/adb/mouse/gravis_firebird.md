@@ -2,7 +2,10 @@
 
 The Gravis Firebird first appears with address 0x3 and handler ID 0x01, but the Gravis Firebird INIT changes the handler ID to 0x4E when it loads, which enables the following output formats.  The INIT may also change the handler ID to 0x23 if it is configured to MouseStick mode, but this does not appear to change the format of its output.
 
-# Talk 0
+
+## Registers
+
+### Talk 0
 
 Talk 0 gives the current state of the joystick's analog and digital controls in an 8-byte response:
 
@@ -34,6 +37,7 @@ Talk 0 gives the current state of the joystick's analog and digital controls in 
 
 \* Bits 7-0 are speculated to correspond to values read from the rudder pedal jack.
 
-# Talk 1
 
-Talk 1 always gives the response 0x0A 0x01 0x30.  This may be a protocol identifier of some kind.
+### Talk 1
+
+Talk 1 always gives the response 0x0A 0x01 0x30.  This is likely a protocol identifier of some kind.
