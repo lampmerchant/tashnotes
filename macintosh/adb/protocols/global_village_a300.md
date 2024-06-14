@@ -6,6 +6,7 @@ The modem's default address may be 0x5 (observed on firmware 1.5) or 0x7 (observ
 
 Consistent with ADB standards, register 0 is the primary communications channel with the modem.
 
+
 ## Talk 0
 
 A Talk 0 command will read status information or data received by the serial port.  If no payload is received, there is no data or status to receive.  If received, the payload is always eight bytes in length, and the eighth byte determines the meaning of the payload:
@@ -29,6 +30,7 @@ A Talk 0 command will read status information or data received by the serial por
 
 The byte 0x95 is treated specially by the driver; in order to reflect the reception of a single 0x95 byte, the device must send two 0x95 bytes in a row.  They do not have to be in the same ADB payload.
 
+
 ### Modem-to-Mac Status A
 
 Default state (with driver installed) appears to be 0xF0 0x01 0x00 0x30 0x0C.  First four bytes are the same as Talk 1, second byte may be the same as second byte of Listen 1.
@@ -50,6 +52,7 @@ Default state (with driver installed) appears to be 0xF0 0x01 0x00 0x30 0x0C.  F
 
 36-34 change when connection is being established, 36 active low and 35-34 active high.
 
+
 ### Modem-to-Mac Status B
 
 | Bit | Meaning                                         |
@@ -64,6 +67,7 @@ Default state (with driver installed) appears to be 0xF0 0x01 0x00 0x30 0x0C.  F
 | 0x6      | 300       |
 
 Other values are undetermined.
+
 
 ## Listen 0
 
@@ -83,9 +87,11 @@ Listen 0 will write data to be sent by the serial port.  The payload must always
 | 0x88-0x9F | Undetermined                                                                                             |
 | 0xA0-0xFF | Payload contains 8 bytes to be sent to serial port in 1st through 8th bytes                              |
 
+
 ## Talk 1
 
 Payload is the same as the first four bytes of Modem-to-Mac Status A.  Post-reset state is 0xF0000000.
+
 
 ## Listen 1
 
@@ -96,6 +102,7 @@ Payload appears always to be two bytes in length.  Second byte may be the same a
 | 15-2              | Undetermined            |
 | 1                 | Modem on?               |
 | 0                 | Modem driver installed? |
+
 
 ## Talk 2
 
@@ -110,6 +117,17 @@ Payload appears always to be six bytes in length.  Appears to communicate the in
 | 9-0               | 0x03A         | Manufacture date, expressed as number of weeks since Sunday, 31 December 1989 |
 
 Example values are from a modem where the control panel displayed "Firmware 1.4, Made 1991-02-10, ID 106382".
+
+
+### Observed Values
+
+| Model # | Serial # | Address | Talk 2 Response                         |
+| ------- | -------- | ------- | --------------------------------------- |
+| A300    | 106382   | 0x7     | 0x14 0x01 0x9F 0x8E 0x64 0x3A           |
+| A300    | 115116   | 0x5     | 0x13 0x01 0xC1 0xAC 0x64 0x4B 0xE1 0xE1 |
+| A300    | 122192   | 0x5     | 0x15 0x01 0xDD 0x50 0x64 0x5F 0xE1 0xE1 |
+| A400    | 207955   | 0x5     | 0x22 0xFF 0xFF 0xFF 0xFC 0x77           |
+
 
 ## Listen 2
 
