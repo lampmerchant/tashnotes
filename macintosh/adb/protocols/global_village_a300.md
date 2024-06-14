@@ -2,7 +2,7 @@
 
 This document contains experimentally-observed behavior of the Global Village A300 modem's ADB protocol.  It contains enough information to satisfactorally emulate the serial port, however, many unknowns exist.
 
-The modem's default address may be 0x5 (observed on firmware 1.5) or 0x7 (observed on firmware 1.4) and its default handler ID is 0x36.
+The modem's default address is typically 0x5 (but 0x7 has also been observed) and its default handler ID is 0x36.
 
 Consistent with ADB standards, register 0 is the primary communications channel with the modem.
 
@@ -119,16 +119,6 @@ Payload appears always to be six bytes in length.  Appears to communicate the in
 Example values are from a modem where the control panel displayed "Firmware 1.4, Made 1991-02-10, ID 106382".
 
 
-### Observed Values
-
-| Model # | Serial # | Address | Talk 2 Response                         |
-| ------- | -------- | ------- | --------------------------------------- |
-| A300    | 106382   | 0x7     | 0x14 0x01 0x9F 0x8E 0x64 0x3A           |
-| A300    | 115116   | 0x5     | 0x13 0x01 0xC1 0xAC 0x64 0x4B 0xE1 0xE1 |
-| A300    | 122192   | 0x5     | 0x15 0x01 0xDD 0x50 0x64 0x5F 0xE1 0xE1 |
-| A400    | 207955   | 0x5     | 0x22 0xFF 0xFF 0xFF 0xFC 0x77           |
-
-
 ## Listen 2
 
 Payload appears always to be four bytes in length.
@@ -138,3 +128,13 @@ Payload appears always to be four bytes in length.
 | 31-15             | Undetermined                                                      |
 | 14                | Break (active high; set and then clear to send a break character) |
 | 13-0              | Undetermined                                                      |
+
+
+## Observed Values from Modems
+
+| Model # | Serial # | Address | Talk 2 Response                         |
+| ------- | -------- | ------- | --------------------------------------- |
+| A300    | 106382   | 0x7     | 0x14 0x01 0x9F 0x8E 0x64 0x3A           |
+| A300    | 115116   | 0x5     | 0x13 0x01 0xC1 0xAC 0x64 0x4B 0xE1 0xE1 |
+| A300    | 122192   | 0x5     | 0x15 0x01 0xDD 0x50 0x64 0x5F 0xE1 0xE1 |
+| A400    | 207955   | 0x5     | 0x22 0xFF 0xFF 0xFF 0xFC 0x77           |
