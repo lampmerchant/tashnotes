@@ -41,7 +41,7 @@ Register 0 is a 16-bit register.  Its upper byte can be written by the host usin
 
 ## Registers 1 and 2
 
-Registers 1 and 2 are both readable (with Talk) and writable (with Listen) 32-bit timers which run when their high byte is nonzero.  When register 1 overflows from 0xFFFFFFFF to 0, if the relay was open, it closes and sets bits 7 and 6 of register 0.  When register 2 overflows from 0xFFFFFFFF to 0, if the relay was closed, it opens and clears bits 7, 6, and 5 of register 0.
+Registers 1 and 2 are both readable (with Talk) and writable (with Listen) 32-bit timers which increment when their high byte is nonzero.  When register 1 overflows from 0xFFFFFFFF to 0, if the relay was open, it closes and sets bits 7 and 6 of register 0.  When register 2 overflows from 0xFFFFFFFF to 0, if the relay was closed, it opens and clears bits 7, 6, and 5 of register 0.
 
 The timers associated with registers 1 and 2 were observed to increment at a rate of 60 Hz.  It is speculated, though not proven, that the timers increment once per cycle of the mains AC waveform and therefore would increment at a rate of 50 Hz if connected to a 50 Hz electric supply (instead of the 60 Hz supply on which they were tested).  On startup, version 3.4 of the driver software sets register 1 then reads its value after approximately half a second, which supports this hypothesis.
 
