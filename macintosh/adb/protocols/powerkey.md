@@ -61,4 +61,4 @@ The software always reports the PowerKey Classic as having a serial number of 0.
 | Serial Number | Firmware Version |
 | ------------- | ---------------- |
 | 09977         | 1.2              |
-| ?             | 1.4              |
+| 66276         | 1.4              |
