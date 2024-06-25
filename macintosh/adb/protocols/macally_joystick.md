@@ -2,6 +2,7 @@
 
 The JoyStick presents itself on the ADB at address 0x5 with handler 0x03.  The handler cannot be changed.
 
+
 ## Talk 0
 
 ### Mouse Mode
@@ -9,6 +10,7 @@ The JoyStick presents itself on the ADB at address 0x5 with handler 0x03.  The h
 In mouse mode, the JoyStick imitates the standard Apple mouse protocol, attempting to correspond the center of the joystick to the center of the screen.  Both joystick buttons actuate the main mouse button.  This mode does not work as intended because the JoyStick's initial device address is 0x5 rather than 0x3.
 
 Why the JoyStick uses address 0x5 instead of 0x3 is unknown.  It is possible, though only speculation, that Apple began allocating handler IDs on address 0x5 after all handler IDs on address 0x3 were used and that, at the time of the handler ID on address 0x5 being assigned, firmware had already been written with the assumption that a handler ID on address 0x3 would be assigned.
+
 
 ### Joystick Mode
 
@@ -32,8 +34,14 @@ Button state is a bit field defined as follows, with 0 meaning down and 1 meanin
 | 1   | Top trigger button   |
 | 0   | Front trigger button |
 
+
 ## Talk/Listen 1
 
 Register 1 indicates and sets the mode for Talk 0.
 
 At startup/after reset, register 1 reads as `0x55 0x55`, which indicates mouse mode.  In mouse mode, writing `0x55 0x55` to register 1 changes its contents to `0xAA 0xAA`, which indicates joystick mode.  In joystick mode, writing `0xAA 0xAA` to register 1 changes its contents back to `0x55 0x55`.
+
+
+## Talk/Listen 3
+
+The JoyStick's address can only be changed with a Listen 3 command where the second byte is 0xFE; it does not change its address in response to Listen 3 commands where the second byte is 0x00.  Additionally, the host must issue a Talk 3 command before attempting to change the address with a Listen 3 command.
