@@ -1,6 +1,6 @@
 # Wiring Guide for PS/2 CueCat
 
-Observed on PS/2 CueCat with Catalog No. 68-1965
+Observed on PS/2 CueCat with Catalog No. 68-1965, Board Model K023A016
 
 | Pin | Function      | Color (Male) | Color (Female) |
 | --- | ------------- | ------------ | -------------- |
