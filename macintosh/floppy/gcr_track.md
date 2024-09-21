@@ -79,7 +79,7 @@ An address header consists of five values encoded from six-bit nibbles into IWM 
 This nibble contains the lower six bits of the cylinder number.
 
 | Bit | Description              |
-| === | ======================== |
+| --- | ------------------------ |
 | 5   | Bit 5 of cylinder number |
 | 4   | Bit 4 of cylinder number |
 | 3   | Bit 3 of cylinder number |
@@ -93,7 +93,7 @@ This nibble contains the lower six bits of the cylinder number.
 This nibble contains the sector number.
 
 | Bit | Description            |
-| === | ====================== |
+| --- | ---------------------- |
 | 5   | Always 0               |
 | 4   | Bit 4 of sector number |
 | 3   | Bit 3 of sector number |
@@ -107,7 +107,7 @@ This nibble contains the sector number.
 This nibble contains the head number and the upper bits of the cylinder number:
 
 | Bit | Description                       |
-| === | ================================= |
+| --- | --------------------------------- |
 | 5   | Head number (0 = bottom, 1 = top) |
 | 4   | Always 0                          |
 | 3   | Always 0                          |
@@ -121,7 +121,7 @@ This nibble contains the head number and the upper bits of the cylinder number:
 This nibble contains attributes of the format of the disk.
 
 | Bit | Description                        |
-| === | ================================== |
+| --- | ---------------------------------- |
 | 5   | 0 = single-sided, 1 = double-sided |
 | 4   | 0 = Macintosh/Apple II, 1 = Lisa   |
 | 3   | Bit 3 of sector interleave ratio   |
@@ -132,7 +132,7 @@ This nibble contains attributes of the format of the disk.
 Known values:
 
 | Value | Description                                     |
-| ===== | =============================================== |
+| ----- | ----------------------------------------------- |
 | 0x02  | Macintosh single-sided disk with 2:1 interleave |
 | 0x12  | Lisa single-sided disk with 2:1 interleave      |
 | 0x22  | Macintosh double-sided disk with 2:1 interleave |
@@ -171,7 +171,7 @@ The sector number is encoded as a single nibble.
 The sector data (12 bytes of tags preceding 512 bytes of data) is first "mangled" using the GCR checksum algorithm, then groups of three bytes are transformed into groups of four nibbles as follows:
 
 | Nibble | Nibble Bit | Byte | Byte Bit |
-| ====== | ========== | ==== | ======== |
+| ------ | ---------- | ---- | -------- |
 | 1st    | 5          | 1st  | 7        |
 | 1st    | 4          | 1st  | 6        |
 | 1st    | 3          | 2nd  | 7        |
@@ -200,7 +200,7 @@ The sector data (12 bytes of tags preceding 512 bytes of data) is first "mangled
 There are 174 such groups, which transform 522 bytes into 696 nibbles.  The final 2 bytes of data are transformed into 3 nibbles as follows:
 
 | Nibble | Nibble Bit | Byte | Byte Bit |
-| ====== | ========== | ==== | ======== |
+| ------ | ---------- | ---- | -------- |
 | 1st    | 5          | 1st  | 7        |
 | 1st    | 4          | 1st  | 6        |
 | 1st    | 3          | 2nd  | 7        |
