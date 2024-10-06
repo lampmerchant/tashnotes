@@ -107,12 +107,12 @@ Note that the `0xA1` bytes described above have a missing clock in order to diff
 
 An MFM address header consists of 4 bytes:
 
-| Index | Description                     |
-| ----- | ------------------------------- |
-| 0     | Cylinder Number                 |
-| 1     | Head Number                     |
-| 2     | Sector Number                   |
-| 3     | Size of Sector (128 * 2ⁿ bytes) |
+| Index | Description                                |
+| ----- | ------------------------------------------ |
+| 0     | Cylinder Number                            |
+| 1     | Head Number                                |
+| 2     | Sector Number                              |
+| 3     | Size of Sector (128 * 2<sup>n</sup> bytes) |
 
 Note that sectors are numbered starting at 1 instead of 0.
 
