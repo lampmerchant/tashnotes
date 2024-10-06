@@ -131,6 +131,27 @@ With MFM encoding, it is necessary to synchronize the reader so that it can tell
 Synchronization is accomplished by means of the sync field and the mark bytes that follow it.  Before writing an index, address, or data mark, the writer writes a sync field of twelve `0x00` bytes.  This appears to the unsynchronized reader as a sequence of 96 flux transitions, each separated by two microseconds.  The reader can look for this sequence immediately followed by three mark bytes and, on finding it, know that it is synchronized.
 
 
+### Synchronization to Index Mark
+
+An example of correct synchronization using an index mark byte (`0xC2` with missing clock) is shown below:
+
+```
+                      [ 0x00                        ] [ 0xC2 with missing clock     ] [ 0xC2 with missing clock     ]
+       Bit Cells: .. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 ..
+                  .._  __  __  __  __  __  __  __  ____  __  ____  ______  ____  ______  __  ____  ______  ____  ____..
+Flux Transitions:    ||  ||  ||  ||  ||  ||  ||  ||    ||  ||    ||      ||    ||      ||  ||    ||      ||    ||
+```
+
+It is safe to use this sequence for synchronization without context as it can never occur in normal data.  For it to do so would require the appearance of an `0x14` byte with a missing clock, which would be invalid:
+
+```
+                    [ 0xFF                        ] [ 0x14 with missing clock     ] [ 0x14 with missing clock     ]
+       Bit Cells: .. 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | ..
+                  .._  __  __  __  __  __  __  __  ____  __  ____  ______  ____  ______  __  ____  ______  ____  ____..
+Flux Transitions:    ||  ||  ||  ||  ||  ||  ||  ||    ||  ||    ||      ||    ||      ||  ||    ||      ||    ||
+```
+
+
 ### Synchronization to Address/Data Mark
 
 An example of correct synchronization using an address/data mark byte (`0xA1` with missing clock) is shown below:
@@ -150,26 +171,3 @@ It is safe to use this sequence for synchronization without context as it can ne
                   .._  __  __  __  __  __  __  __  ____  ______  ____  ______  ____  __  ______  ____  ______  ____  ..
 Flux Transitions:    ||  ||  ||  ||  ||  ||  ||  ||    ||      ||    ||      ||    ||  ||      ||    ||      ||    ||
 ```
-
-
-### Synchronization to Index Mark
-
-An example of correct synchronization using an index mark byte (`0xC2` with missing clock) is shown below:
-
-```
-                      [ 0x00                        ] [ 0xC2 with missing clock     ] [ 0xC2 with missing clock     ]
-       Bit Cells: .. | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 ..
-                  .._  __  __  __  __  __  __  __  ____  __  ____  ______  ____  ______  __  ____  ______  ____  ____..
-Flux Transitions:    ||  ||  ||  ||  ||  ||  ||  ||    ||  ||    ||      ||    ||      ||  ||    ||      ||    ||
-```
-
-Unlike synchronization to an address/data mark, it is *not* safe to use this sequence for synchronization without context as it *can* occur in normal data:
-
-```
-                    [ 0xFF                        ] [ 0x14                        ] [ 0x14                        ]
-       Bit Cells: .. 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | ..
-                  .._  __  __  __  __  __  __  __  ____  __  ____  ______  ____  ______  __  ____  ______  ____  ____..
-Flux Transitions:    ||  ||  ||  ||  ||  ||  ||  ||    ||  ||    ||      ||    ||      ||  ||    ||      ||    ||
-```
-
-To synchronize to an index mark, the reader must first look for an index pulse from the drive in order to be sure that it is not in the middle of a data sector that contains the sequence of ordinary bytes shown above.
