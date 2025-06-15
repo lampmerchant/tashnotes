@@ -10,6 +10,7 @@
 | DataDesk   |                             | TK-3000            | Yes  | No   | No      | pl212@68kMLA      |
 | Kensington | Mouse-in-a-Box              | 65206              | Yes  | Yes  | Yes     | demik@68kMLA      |
 | Kensington | Mouse ADB                   | 64205              | Yes  | Yes  | Yes     | Tashtari          |
+| Kensington | Thinking Mouse              | 64101              | Yes  | Yes  | Yes     | demik@68kMLA      |
 | Kensington | Turbo Mouse                 | 64210              | Yes  | Yes  | Yes     | Tashtari          |
 | Logitech   | MouseMan ADB                | M-AC13-4MD         | Yes  | Yes  | Yes     | nyef@68kMLA       |
 | Logitech   | MouseMan Macintosh Version  | M-AH32 / 840015-00 | Yes  | Yes  | Yes     | nyef@68kMLA       |
