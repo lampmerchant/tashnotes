@@ -10,25 +10,25 @@ All signals from the IWM/SWIM are common to all floppy disk drive connectors in 
 
 ## Macintosh Compatibility Matrix
 
-| Model         | Firmware Support        | !ENBL2 Location               | Max Devices | Tested By |
-| ------------- | ----------------------- | ----------------------------- | ----------- | --------- |
-| 512K          | With Hard Disk 20 Patch | External 19-Pin D-Sub         | 4?          |           |
-| 512Ke         | In ROM                  | External 19-Pin D-Sub         | 4           | Tashtari  |
-| Plus          | In ROM                  | External 19-Pin D-Sub         | 4           |           |
-| SE            | In ROM                  | External 19-Pin D-Sub         | 2           |           |
-| IIx           | With Nonstandard ROM    | Second Internal Floppy Header | 2           |           |
-| SE/30         | With Nonstandard ROM    | External 19-Pin D-Sub         | 2           |           |
-| IIcx          | With Nonstandard ROM    | External 19-Pin D-Sub         | 2           | demik     |
-| IIci          | In ROM                  | External 19-Pin D-Sub         | 2?          |           |
-| Portable      | In ROM                  | External 19-Pin D-Sub         | 2?          | WillJac   |
-| Classic       | In ROM                  | External 19-Pin D-Sub         | 2           | Tashtari  |
-| LC            | In ROM                  | Second Internal Floppy Header | 2?          |           |
-| IIsi          | In ROM                  | External 19-Pin D-Sub         | 2?          |           |
-| Classic II    | In ROM                  | External 19-Pin D-Sub         | 2           | Tashtari  |
-| PowerBook 100 | In ROM                  | External HDI-20 Connector?    | 2?          |           |
-| LC II         | In ROM                  | SWIM PLCC Pin 19              | 2?          | Tashtari  |
-| IIvi          | In ROM                  | SWIM PLCC Pin 19              | 2?          |           |
-| IIvx          | In ROM                  | SWIM PLCC Pin 19              | 2?          | Fizzbinn  |
+| Model         | Firmware Support        | !ENBL2 Location               | Max Devices | Tested By         |
+| ------------- | ----------------------- | ----------------------------- | ----------- | ----------------- |
+| 512K          | With Hard Disk 20 Patch | External 19-Pin D-Sub         | 4?          |                   |
+| 512Ke         | In ROM                  | External 19-Pin D-Sub         | 4           | Tashtari          |
+| Plus          | In ROM                  | External 19-Pin D-Sub         | 4           |                   |
+| SE            | In ROM                  | External 19-Pin D-Sub         | 2           |                   |
+| IIx           | With Nonstandard ROM    | Second Internal Floppy Header | 2           |                   |
+| SE/30         | With Nonstandard ROM    | External 19-Pin D-Sub         | 2           |                   |
+| IIcx          | With Nonstandard ROM    | External 19-Pin D-Sub         | 2           | demik@68kMLA      |
+| IIci          | In ROM                  | External 19-Pin D-Sub         | 2?          |                   |
+| Portable      | In ROM                  | External 19-Pin D-Sub         | 2?          | WillJac@68kMLA    |
+| Classic       | In ROM                  | External 19-Pin D-Sub         | 2           | Tashtari          |
+| LC            | In ROM                  | Second Internal Floppy Header | 2?          |                   |
+| IIsi          | In ROM                  | External 19-Pin D-Sub         | 2?          |                   |
+| Classic II    | In ROM                  | External 19-Pin D-Sub         | 2           | Tashtari          |
+| PowerBook 100 | In ROM                  | External HDI-20 Connector     | 2?          | David Cook@68kMLA |
+| LC II         | In ROM                  | SWIM PLCC Pin 19              | 2?          | Tashtari          |
+| IIvi          | In ROM                  | SWIM PLCC Pin 19              | 2?          |                   |
+| IIvx          | In ROM                  | SWIM PLCC Pin 19              | 2?          | Fizzbinn@68kMLA   |
 
 Cells marked with ? are speculated to be true but untested.
 
