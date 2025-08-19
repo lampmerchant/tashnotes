@@ -8,30 +8,62 @@ Multiple DCD devices can be connected to a single Macintosh in a daisy chain, op
 
 All signals from the IWM/SWIM are common to all floppy disk drive connectors in a Macintosh except for the enable (!ENBL) signal; the IWM/SWIM has two of these (!ENBL1 and !ENBL2) with the intention of being able to control two floppy disk drives.  All known Macintosh ROMs that have support for DCD will only recognize DCD devices when !ENBL2 is used as the !ENBL signal.  When a Macintosh has an external 19-pin D-sub[^1] floppy disk drive connector, !ENBL2 is always routed to it, but !ENBL2 can still be used to connect devices even on a Macintosh that does not have such a connector.
 
-## Macintosh Compatibility Matrix
 
-| Model         | Firmware Support                         | !ENBL2 Location               | Max Devices | Tested By         |
-| ------------- | ---------------------------------------- | ----------------------------- | ----------- | ----------------- |
-| 512K          | With Hard Disk 20 Patch                  | External 19-Pin D-Sub         | 4?          |                   |
-| 512Ke         | In ROM                                   | External 19-Pin D-Sub         | 4           | Tashtari          |
-| Plus          | In ROM                                   | External 19-Pin D-Sub         | 4           |                   |
-| SE            | In ROM                                   | External 19-Pin D-Sub         | 2           |                   |
-| II            | With MacIIHD20 Patch                     | Second Internal Floppy Header | 2?          |                   |
-| IIx           | With MacIIHD20 Patch? or Nonstandard ROM | Second Internal Floppy Header | 2?          |                   |
-| SE/30         | With MacIIHD20 Patch or Nonstandard ROM  | External 19-Pin D-Sub         | 2?          | David Cook@68kMLA |
-| IIcx          | With MacIIHD20 Patch? or Nonstandard ROM | External 19-Pin D-Sub         | 2?          | demik@68kMLA      |
-| IIci          | In ROM                                   | External 19-Pin D-Sub         | 2?          |                   |
-| Portable      | In ROM                                   | External 19-Pin D-Sub         | 2?          | WillJac@68kMLA    |
-| Classic       | In ROM                                   | External 19-Pin D-Sub         | 2           | Tashtari          |
-| LC            | In ROM                                   | Second Internal Floppy Header | 2?          |                   |
-| IIsi          | In ROM                                   | External 19-Pin D-Sub         | 2?          |                   |
-| Classic II    | In ROM                                   | External 19-Pin D-Sub         | 2           | Tashtari          |
-| PowerBook 100 | In ROM                                   | External HDI-20 Connector     | 2?          | David Cook@68kMLA |
-| LC II         | In ROM                                   | SWIM PLCC Pin 19              | 2?          | Tashtari          |
-| IIvi          | In ROM                                   | SWIM PLCC Pin 19              | 2?          |                   |
-| IIvx          | In ROM                                   | SWIM PLCC Pin 19              | 2?          | Fizzbinn@68kMLA   |
+## Macintosh Compatibility Matrices
 
 Cells marked with ? are speculated to be true but untested.
+
+
+### Support in Native ROM
+
+| Model         | !ENBL2 Location               | Max Devices | Tested By         |
+| ------------- | ----------------------------- | ----------- | ----------------- |
+| 512Ke         | External 19-Pin D-Sub         | 4           | Tashtari          |
+| Plus          | External 19-Pin D-Sub         | 4           |                   |
+| SE            | External 19-Pin D-Sub         | 2           |                   |
+| IIci          | External 19-Pin D-Sub         | 2?          |                   |
+| Portable      | External 19-Pin D-Sub         | 2?          | WillJac@68kMLA    |
+| Classic       | External 19-Pin D-Sub         | 2           | Tashtari          |
+| LC            | Second Internal Floppy Header | 2?          |                   |
+| IIsi          | External 19-Pin D-Sub         | 2?          |                   |
+| Classic II    | External 19-Pin D-Sub         | 2           | Tashtari          |
+| PowerBook 100 | External HDI-20 Connector     | 2?          | David Cook@68kMLA |
+| LC II         | SWIM PLCC Pin 19              | 2?          | Tashtari          |
+| IIvi          | SWIM PLCC Pin 19              | 2?          |                   |
+| IIvx          | SWIM PLCC Pin 19              | 2?          | Fizzbinn@68kMLA   |
+
+
+### Support with Hard Disk 20 Patch
+
+Official patch distributed with System 2.1.
+
+| Model | !ENBL2 Location       | Max Devices | Tested By |
+| ----- | --------------------- | ----------- | --------- |
+| 512K  | External 19-Pin D-Sub | 4?          |           |
+
+
+### Support with MacIIHD20 Patch
+
+Unofficial patch distributed on "Developer CD Series 1990: Night of the Living Disc", available [here](https://discmaster.textfiles.com/browse/31867/bincue/Night%20of%20the%20Living%20Disc.bin/Storage%20&%20Communications/Hard%20Disks/HD%2020%20Drivers%201.1/).
+
+| Model | !ENBL2 Location               | Max Devices | Tested By         |
+| ----- | ----------------------------- | ----------- | ----------------- |
+| II    | Second Internal Floppy Header | 2?          |                   |
+| IIx   | Second Internal Floppy Header | 2?          | David Cook@68kMLA |
+| SE/30 | External 19-Pin D-Sub         | 2?          | David Cook@68kMLA |
+| IIcx  | External 19-Pin D-Sub         | 2?          | David Cook@68kMLA |
+
+
+### Support with BMOW ROMinator
+
+Unofficial ROM SIMM for various 68030-based Macs, available [here](https://www.bigmessowires.com/mac-rom-inator-ii/).
+
+| Model | !ENBL2 Location               | Max Devices | Tested By    |
+| ----- | ----------------------------- | ----------- | ------------ |
+| IIx   | Second Internal Floppy Header | 2?          |              |
+| SE/30 | External 19-Pin D-Sub         | 2?          |              |
+| IIcx  | External 19-Pin D-Sub         | 2           | demik@68kMLA |
+
 
 ## Macintosh System Software Compatibility Matrix
 
@@ -40,6 +72,7 @@ Cells marked with ? are speculated to be true but untested.
 | 6.0.8   | Yes         |
 | 7.1     | Yes         |
 | 7.5     | No          |
+
 
 ## Implementations
 
@@ -50,6 +83,7 @@ The Hard Disk 20 was the only contemporaneous product released by Apple or any o
 More Info:
   * [Hard Disk 20](https://en.wikipedia.org/wiki/Hard_Disk_20)
 
+
 ### Floppy Emu
 
 In 2014, the Floppy Emu by Big Mess O' Wires added support for DCD.
@@ -59,6 +93,7 @@ More Info:
   * [Blog Post, February 2014](https://www.bigmessowires.com/2014/02/06/emulating-the-apple-hd20/)
   * [Blog Post, November 2014](https://www.bigmessowires.com/2014/11/22/reverse-engineering-the-hd20/)
 
+
 ### TashTwenty
 
 TashTwenty is an open source firmware implementation of DCD written by Tashtari for the Microchip PIC16F1704.
@@ -66,6 +101,7 @@ TashTwenty is an open source firmware implementation of DCD written by Tashtari 
 More Info:
   * [GitHub Repository](https://github.com/lampmerchant/tashtwenty/)
   * [68kMLA Forum Thread](https://68kmla.org/bb/index.php?threads/tashtwenty-single-chip-dcd-hard-disk-20-interface.39357/)
+
 
 ## References
 
