@@ -13,7 +13,9 @@
 | Logitech MouseMan Macintosh Version | 0x4C543031 ("LT01") | 400 units/inch | 0x01 (Mouse)     | 3       | nyef@68kMLA       |
 | Logitech TrackMan                   | 0x4C543031 ("LT01") | 200 units/inch | 0x02 (Trackball) | 3       | Tashtari          |
 | MacAlly One Button Mouse            | 0x4B4F4954 ("KOIT") | 200 units/inch | 0x01 (Mouse)     | 1       | Tashtari          |
+| PowerBook 520 Trackpad              | 0x74706164 ("tpad") | 387 units/inch | 0x03[^3]         | 2[^1]   | demik@68kMLA      |
 | PowerBook Duo 230 Trackball         | 0x50472645 ("PG&E") | 100 units/inch | 0x02 (Trackball) | 2       | mdeverhart@68kMLA |
 
 [^1]: Device actually has only one button
 [^2]: Device actually has only two buttons
+[^3]: Class 0x03 is not defined by Technical Note HW01 (dated 28 Sep 1998)

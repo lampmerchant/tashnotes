@@ -6,6 +6,7 @@
 | Apple      | Apple Desktop Bus Mouse     | A9M0331            | Yes  | Yes  | No      | Tashtari          |
 | Apple      | Apple Desktop Bus Mouse     | G5431              | Yes  | Yes  | No      | Tashtari          |
 | Apple      | Apple Desktop Bus Mouse II  | M2706              | Yes  | Yes  | Yes[^1] | demik@68kMLA      |
+| Apple      | PowerBook 520 Trackpad      |                    | Yes  | Yes  | Yes     | demik@68kMLA      |
 | Apple      | PowerBook Duo 230 Trackball |                    | Yes  | Yes  | Yes     | mdeverhart@68kMLA |
 | DataDesk   |                             | TK-3000            | Yes  | No   | No      | pl212@68kMLA      |
 | Kensington | Mouse-in-a-Box              | 65206              | Yes  | Yes  | Yes     | demik@68kMLA      |
