@@ -1,6 +1,6 @@
-# MacCharlie Keyboard Codes
+# Dayna MacCharlie Keyboard Codes
 
-The MacCharlie keyboard extension imitates and extends the protocol of the M0120 keypad: key event codes are preceded with `0x79`.
+The Dayna MacCharlie keyboard extension imitates and extends the protocol of the M0120 keypad: key event codes are preceded with `0x79`.
 
 
 ## Numeric Keypad Keys
