@@ -122,7 +122,7 @@ UpdateCrc
 	bsf	INTCON,GIE	; "
 	movf	CRC_L,W		;XOR the low byte of the register with the high
 	xorwf	PMDATH,W	; byte from the lookup table, reconstructing the
-	btfsc	PMDATL,3	; missing top two bits from bits 3 and 2 of the
+	btfsc	PMDATL,3	; missing top two bits from bits 4 and 3 of the
 	xorlw	B'01000000'	; low byte of the lookup table, and make this
 	btfsc	PMDATL,4	; the new high byte of the register
 	xorlw	B'10000000'	; "
