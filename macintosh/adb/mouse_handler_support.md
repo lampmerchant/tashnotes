@@ -17,5 +17,6 @@
 | Logitech   | MouseMan Macintosh Version  | M-AH32 / 840015-00 | Yes  | Yes  | Yes     | nyef@68kMLA       |
 | Logitech   | TrackMan Stationary Mouse   | T-AE2 / 804071-00  | Yes  | Yes  | Yes     | Tashtari          |
 | MacAlly    | One Button Mouse            |                    | Yes  | Yes  | Yes     | Tashtari          |
+| MacAlly    | Trackball                   | MTB01              | Yes  | Yes  | No      | Tashtari          |
 
 [^1]: Some ADB Mouse IIs do not support handler 0x04.

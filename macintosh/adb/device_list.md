@@ -60,6 +60,7 @@ Original Address 0x3
 | 0x01         | Logitech        | MouseMan Macintosh Version  | M-AH32 / 840015-00 | Mouse                       | nyef@68kMLA       |
 | 0x01         | Logitech        | TrackMan Stationary Mouse   | T-AE2 / 804071-00  | Trackball                   | Tashtari          |
 | 0x01         | MacAlly         | One Button Mouse            |                    | Mouse                       | Tashtari          |
+| 0x01         | MacAlly         | Trackball                   | MTB01              | Trackball                   | Tashtari          |
 | 0x01         | NeXT            | Mouse                       | N8003              | Mouse                       | demik@68kMLA      |
 | 0x02         | Apple           | PowerBook Duo 230 Trackball |                    | Trackball                   | mdeverhart@68kMLA |
 | 0x04         | Apple           | PowerBook 520 Trackpad      |                    | Trackpad                    | demik@68kMLA      |
@@ -124,6 +125,7 @@ Original Address 0x7
 | 0x35       | Neotech                | Colour Adapter Module |              | Module for Neotech Image Grabber NuBus card | Jockelill@68kMLA     |
 | 0x41       | JLCooper Electronics   | Media Control Station | 300007       | Jog dial and media control device           | Tashtari             |
 | 0x67       | HASP                   | MacHASP-M             | KSWAVESO B   | License dongle                              | ArmorAlley@68kMLA    |
+| 0x67       | HASP                   | MacHASP-M             | QCDIY UM     | License dongle                              | Tashtari             |
 | 0x71       | Sophisticated Circuits | PowerKey Pro 200      | PK3M1        | Relay-controlled power strip                | Tashtari             |
 | 0x79       | LaCie                  | FM Radio              |              | FM radio                                    | Tashtari             |
 | 0x7A       | BeeHive Technologies   | ADB I/O               |              | Analog and digital I/O interface            | [Link][3]            |
