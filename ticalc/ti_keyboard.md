@@ -76,7 +76,7 @@ event where Caps Lock is pressed to deactivate it.
 | 0x38 | ↑               |
 | 0x39 | Backspace       |
 | 0x3A | `+` `=`         |
-| 0x3B | `|` `\`         |
+| 0x3B | `\|` `\`        |
 | 0x3C | `}` `]`         |
 | 0x3D | Enter           |
 | 0x3E | `?` `/`         |
