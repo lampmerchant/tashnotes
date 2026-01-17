@@ -4,7 +4,7 @@
 
 With every key event, the keyboard transmits the following D-Bus events:
  - 0xE0
- - Error/Abort (both lines pulled low) for 80 �s
+ - Error/Abort (both lines pulled low) for 80 µs
  - 0x01
  - Key/Event Code (see below)
 
@@ -24,7 +24,7 @@ event where Caps Lock is pressed to deactivate it.
 | ---- | --------------- |
 | 0x00 | (keys released) |
 | 0x01 | `!` `1`         |
-| 0x02 | `~` `\``        |
+| 0x02 | `~` `ˋ`         |
 | 0x03 | Tab             |
 | 0x04 | `Q`             |
 | 0x05 | `A`             |
@@ -40,7 +40,6 @@ event where Caps Lock is pressed to deactivate it.
 | 0x0F | `C`             |
 | 0x10 | Page Up         |
 | 0x11 | `$` `4`         |
-| 0x12 | ?               |
 | 0x13 | `R`             |
 | 0x14 | `T`             |
 | 0x15 | `D`             |
@@ -48,7 +47,6 @@ event where Caps Lock is pressed to deactivate it.
 | 0x17 | `V`             |
 | 0x18 | Page Down       |
 | 0x19 | `%` `5`         |
-| 0x1A | ?               |
 | 0x1B | `U`             |
 | 0x1C | `Y`             |
 | 0x1D | `H`             |
@@ -58,27 +56,24 @@ event where Caps Lock is pressed to deactivate it.
 | 0x21 | `^` `6`         |
 | 0x22 | `&` `7`         |
 | 0x23 | `I`             |
-| 0x24 | ?               |
 | 0x25 | `J`             |
 | 0x26 | `K`             |
 | 0x27 | `N`             |
-| 0x28 | ?               |
+| 0x28 | ←               |
 | 0x29 | `(` `9`         |
 | 0x2A | `*` `8`         |
 | 0x2B | `O`             |
-| 0x2C | ?               |
 | 0x2D | `:` `;`         |
 | 0x2E | `L`             |
 | 0x2F | `M`             |
-| 0x30 | ?               |
+| 0x30 | →               |
 | 0x31 | `)` `0`         |
 | 0x32 | `_` `-`         |
 | 0x33 | `P`             |
 | 0x34 | `{` `[`         |
 | 0x35 | `"` `'`         |
-| 0x36 | ?               |
 | 0x37 | `<` `,`         |
-| 0x38 | ?               |
+| 0x38 | ↑               |
 | 0x39 | Backspace       |
 | 0x3A | `+` `=`         |
 | 0x3B | `|` `\`         |
@@ -86,7 +81,7 @@ event where Caps Lock is pressed to deactivate it.
 | 0x3D | Enter           |
 | 0x3E | `?` `/`         |
 | 0x3F | `>` `.`         |
-| 0x40 | ?               |
+| 0x40 | ↓               |
 
 
 ### Modifier Keys
@@ -100,7 +95,7 @@ form is sent:
 | 6   | Always 1                 |
 | 5   | Always 0                 |
 | 4   | Always 1                 |
-| 3   | 1 if ? is Down           |
-| 2   | 1 if ? is Down           |
+| 3   | 1 if ■ is Down           |
+| 2   | 1 if ◆ is Down           |
 | 1   | 1 if Right Shift is Down |
 | 0   | 1 if Left Shift is Down  |
