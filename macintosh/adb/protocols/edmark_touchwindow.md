@@ -22,6 +22,6 @@ When the TouchWindow has data to send, Talk 0 is responded to with a four-byte p
 | 3      | 1 if window is not being touched and neither button is down |
 | 2-0    | Always 0                                                    |
 
-X and Y position increase from left to right and top to bottom, respectively.  Observed X and Y values ranged from 0x094 to 0x1C0 and 0x08E to 0x16A, respectively.
+X and Y position increase from left to right and top to bottom, respectively.  Observed X and Y values ranged from 0x094 to 0x1C0 and 0x08C to 0x168, respectively.
 
 When the window is no longer being touched and both buttons are released, the TouchWindow responds to Talk 0 with a packet where the X and Y positions are 0 and bit 3 is set; thereafter, Talk 0 is met with no response until the window is touched or a button is pressed.
