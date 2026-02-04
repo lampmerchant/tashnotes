@@ -28,7 +28,7 @@ Direction is Macintosh relative to DCD device.
 | 1     | Low  | Low  | High | High | Low  | Low   | Data        |
 | 2     | Low  | High | Low  | Low  | Low  | Low   | !HSHK       |
 | 3     | Low  | High | High | High | Low  | Low   | !HSHK       |
-| 4     | High | Low  | Low  | Low  | Low  | High  | --          |
+| 4     | High | Low  | Low  | Low  | Low  | High  | —           |
 | 5     | High | Low  | High | Low  | Low  | Low   | Drive Low   |
 | 6     | High | High | Low  | Low  | Low  | Low   | Drive High  |
 | 7     | High | High | High | Low  | Low  | Low   | Drive High  |
