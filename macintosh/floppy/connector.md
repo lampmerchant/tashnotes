@@ -36,10 +36,10 @@ The non-standard 19-pin D-subminiature connector used for external drive connect
 | Pin Name/Function     | Source       | Direction | D-Subminiature Pin | 2x10 Header Pin |
 | --------------------- | ------------ | --------- | ------------------ | --------------- |
 | Ground                | Power Supply | —         | 1, 2, 3, 4*        | 1, 3, 5, 7      |
-| § (see below)         |              |           | 5                  | 9               |
+| △ (see below)         |              |           | 5                  | 9               |
 | +5V                   | Power Supply | →         | 6                  | 11              |
 | +12V                  | Power Supply | →         | 7, 8               | 13, 15, 17, 19  |
-| ¶ (see below)         |              |           | 10                 | 20              |
+| ◇ (see below)         |              |           | 10                 | 20              |
 | CA0 / Phase0          | IWM/SWIM     | →         | 11                 | 2               |
 | CA1 / Phase1          | IWM/SWIM     | →         | 12                 | 4               |
 | CA2 / Phase2          | IWM/SWIM     | →         | 13                 | 6               |
@@ -57,7 +57,7 @@ Direction is Macintosh relative to drive.
 
 ## Pin Assignments (Per Drive)
 
-### §
+### △ Pin
 
 | Drive                              | Pin Name/Function | Direction |
 | ---------------------------------- | ----------------- | --------- |
@@ -69,7 +69,7 @@ Direction is Macintosh relative to drive.
 Direction is Macintosh relative to drive.
 
 
-### ¶
+### ◇ Pin
 
 | Drive                              | Pin Name/Function | Direction |
 | ---------------------------------- | ----------------- | --------- |
@@ -83,7 +83,7 @@ Direction is Macintosh relative to drive.
 
 ## Pin Assignments (Per Macintosh Model)
 
-### §
+### △ Pin
 
 | Macintosh Model         | Pin Name/Function | Source       | Direction |
 | ----------------------- | ----------------- | ------------ | --------- |
@@ -98,7 +98,7 @@ Direction is Macintosh relative to drive.
 † Macintosh models with manual-inject floppy drives may connect this pin to ground, which may cause automatic-inject floppy drives to eject constantly.
 
 
-### ¶
+### ◇ Pin
 
 | Macintosh Model         | Pin Name/Function           | Source       | Direction |
 | ----------------------- | --------------------------- | ------------ | --------- |
