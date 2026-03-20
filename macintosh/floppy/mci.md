@@ -138,7 +138,7 @@ The MCI uses the CA2-0 lines and the SEL line to select one of a set of one-bit 
 | SIDES       | High when drive has a top head in addition to a bottom head                             |
 | !READY      | Low when motor is at proper speed and head is ready to step                             |
 | !DRVIN      | Low when drive is installed                                                             |
-| REVISED     | High for double-sided double-density drives, low for single-sided double-density drives |
+| REVISED     | Intended to be used as a determiner for an unreleased version of the 400 KB drive? TODO |
 | PRESENT/!HD | High when a double-density (not high-density) disk is present on a high-density drive   |
 | DCDDATA     | Communication channel from DCD device to Macintosh                                      |
 | !HSHK       | Low when DCD device is ready to receive or wishes to send                               |
@@ -172,6 +172,8 @@ The MCI uses the CA2-0 lines and the SEL line to select one of a set of commands
 | --------------- | ---------- | ----- | ------ | --------------------------------------------- |
 | None            | High       | High  | High   | High                                          |
 | 400 KB GCR      | Low        | Low   | Low    | Low                                           |
-| 800 KB GCR      | Low        | High  | Low    | High                                          |
+| 800 KB GCR      | Low        | High  | Low    | †                                             |
 | Superdrive      | High       | High  | Low    | High if double-density disk present, else low |
 | Hard Disk 20    | Low        | High  | High   | High                                          |
+
+† TODO
