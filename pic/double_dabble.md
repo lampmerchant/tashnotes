@@ -48,13 +48,13 @@ Loop	lsrf	X3,F		;Shift
 	rrf	X0,F		; "
 	btfsc	STATUS,C	;Check if the sentinel bit rolled off the end of
 	return			; the binary space and finish if it did
-	movlw	0x03		;If the MSb of either byte's low nibble is over
-	btfsc	X2,3		; 7, subtract 3 from it
+	movlw	0x03		;If the MSb of either byte's low nibble is set,
+	btfsc	X2,3		; subtract 3 from it
 	subwf	X2,F		; "
 	btfsc	X3,3		; "
 	subwf	X3,F		; "
-	movlw	0x30		;If the low byte's high nibble is over 7,
-	btfsc	X2,7		; subtract 3 from it (the high byte's high
-	subwf	X2,F		; nibble cannot be over 7 because we lsrf'd it)
+	movlw	0x30		;If the low byte's high nibble's MSb is set,
+	btfsc	X2,7		; subtract 3 from it (that of the high byte
+	subwf	X2,F		; cannot be set because we lsrf'd it)
 	bra	Loop		;Loop
 ```
