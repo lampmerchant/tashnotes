@@ -67,6 +67,8 @@ Original Address 0x3
 | 0x01         | MacAlly         | One Button Mouse            |                    | Mouse                       | Tashtari          |
 | 0x01         | MacAlly         | Trackball                   | MTB01              | Trackball                   | Tashtari          |
 | 0x01         | NeXT            | Mouse                       | N8003              | Mouse                       | demik@68kMLA      |
+| 0x01         | Sicos           |                             |                    | Mouse                       | demik@68kMLA      |
+| 0x01         | Swann           | Mouse                       | 43A2               | Mouse                       | demik@68kMLA      |
 | 0x02         | Apple           | PowerBook Duo 230 Trackball |                    | Trackball                   | mdeverhart@68kMLA |
 | 0x04         | Apple           | PowerBook 520 Trackpad      |                    | Trackpad                    | demik@68kMLA      |
 | 0x23         | Advanced Gravis | MouseStick GMPU             |                    | 3-button joystick interface | Tashtari          |
