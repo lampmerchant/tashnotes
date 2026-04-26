@@ -18,5 +18,7 @@
 | Logitech   | TrackMan Stationary Mouse   | T-AE2 / 804071-00  | Yes  | Yes  | Yes     | Tashtari          |
 | MacAlly    | One Button Mouse            |                    | Yes  | Yes  | Yes     | Tashtari          |
 | MacAlly    | Trackball                   | MTB01              | Yes  | Yes  | No      | Tashtari          |
+| Sicos      |                             |                    | Yes  | No   | No      | demik@68kMLA      |
+| Swann      | Mouse                       | 43A2               | Yes  | Yes  | No      | demik@68kMLA      |
 
 [^1]: Some ADB Mouse IIs do not support handler 0x04.
