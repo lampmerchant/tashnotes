@@ -7,41 +7,46 @@ This is an obviously-incomplete list of known ADB devices and their identifying 
 
 Original Address 0x1
 
-| Handler ID | Make                 | Model Name    | Model Number | Description    | Source   |
-| ---------- | -------------------- | ------------- | ------------ | -------------- | -------- |
-| 0x34       | Rainbow Technologies | Sentinel Eve3 |              | License dongle | Tashtari |
+| Handler ID | Make                        | Model Name    | Model Number | Description    | Source                |
+| ---------- | --------------------------- | ------------- | ------------ | -------------- | --------------------- |
+| 0x24       | Rainbow Technologies        | Sentinel EVE  |              | License dongle | Antoine Vignau@68kMLA |
+| 0x34       | Rainbow Technologies        | Sentinel Eve3 |              | License dongle | Tashtari              |
+| 0x39       | Data Encryption Systems Ltd | DK8           |              | License dongle | Antoine Vignau@68kMLA |
 
 
 ## Encoded Devices
 
 Original Address 0x2
 
-| Handler ID | Make            | Model Name                         | Model Number | Description        | Source              |
-| ---------- | --------------- | ---------------------------------- | ------------ | ------------------ | ------------------- |
-| 0x01       | Apple           | Keyboard                           | M0116        | Keyboard           | Tashtari            |
-| 0x01       | DataDesk        |                                    | TK-3000      | Keyboard/trackball | pl212@68kMLA        |
-| 0x02       | Alps            | GlidePoint Keypad                  | FGS018-00    | Keypad/trackpad    | Tashtari            |
-| 0x02       | Apple           | Extended Keyboard                  | M0115        | Keyboard           | Tashtari            |
-| 0x02       | Apple           | Extended Keyboard II               | M3501        | Keyboard           | Tashtari            |
-| 0x02       | Apple           | AppleDesign Keyboard               | M2980        | Keyboard           | Tashtari            |
-| 0x04       | Apple           | Keyboard ISO                       | M0118        | Keyboard           | [Link][1] [Link][2] |
-| 0x05       | Apple           | Extended Keyboard ISO              | M0115        | Keyboard           | [Link][1] [Link][2] |
-| 0x05       | Apple           | Extended Keyboard II ISO           | M3501        | Keyboard           | demik@68kMLA        |
-| 0x05       | Apple           | AppleDesign Keyboard ISO           | M2980        | Keyboard           | demik@68kMLA        |
-| 0x05       | MacAlly         | MacAlly-MK                         | 105X         | Keyboard           | demik@68kMLA        |
-| 0x06       | Apple           | Portable Keyboard                  | ?            | Keyboard           | [Link][1]           |
-| 0x07       | Apple           | Portable Keyboard ISO              | ?            | Keyboard           | [Link][1]           |
-| 0x08       | Apple           | Keyboard II                        | M0487        | Keyboard           | Tashtari            |
-| 0x09       | Apple           | Keyboard II ISO                    | ?            | Keyboard           | [Link][1]           |
-| 0x0A/0x0C  | Apple           | PowerBook 100/140/170 Keyboard     | ?            | Keyboard           | [Link][1]           |
-| 0x0C       | Apple           | PowerBook Duo 230 Keyboard         | ?            | Keyboard           | mdeverhart@68kMLA   |
-| 0x0D       | Apple           | PowerBook 100/140/170 Keyboard ISO | ?            | Keyboard           | [Link][1]           |
-| 0x0E       | Apple           | Adjustable Keyboard Keypad         | M1242        | Keypad             | [Link][1] [Link][2] |
-| 0x10       | Apple           | Adjustable Keyboard                | M1242        | Keyboard           | [Link][1] [Link][2] |
-| 0x11       | Apple           | Adjustable Keyboard ISO            | ?            | Keyboard           | [Link][1]           |
-| 0x12       | Apple           | Adjustable Keyboard JIS            | ?            | Keyboard           | [Link][2]           |
-| 0x16       | Apple           | Keyboard II JIS                    | M0487        | Keyboard           | [Link][2]           |
-| 0x34[^2]   | Advanced Gravis | Mac GamePad                        |              | Game controller    | Tashtari            |
+| Handler ID | Make             | Model Name                          | Model Number | Description        | Source                |
+| ---------- | ---------------- | ----------------------------------- | ------------ | ------------------ | --------------------- |
+| 0x01       | Apple            | Keyboard                            | M0116        | Keyboard           | Tashtari              |
+| 0x01       | Apple            |                                     | C 658-4081   | Keyboard           | Antoine Vignau@68kMLA |
+| 0x01       | DataDesk         |                                     | TK-3000      | Keyboard/trackball | pl212@68kMLA          |
+| 0x02       | Alps             | GlidePoint Keypad                   | FGS018-00    | Keypad/trackpad    | Tashtari              |
+| 0x02       | Apple            | Extended Keyboard                   | M0115        | Keyboard           | Tashtari              |
+| 0x02       | Apple            | Extended Keyboard II                | M3501        | Keyboard           | Tashtari              |
+| 0x02       | Apple            | AppleDesign Keyboard                | M2980        | Keyboard           | Tashtari              |
+| 0x04       | Apple            | Keyboard ISO                        | M0118        | Keyboard           | [Link][1] [Link][2]   |
+| 0x05       | Apple            | Extended Keyboard ISO               | M0115        | Keyboard           | [Link][1] [Link][2]   |
+| 0x05       | Apple            | Extended Keyboard II ISO            | M3501        | Keyboard           | demik@68kMLA          |
+| 0x05       | Apple            | AppleDesign Keyboard ISO            | M2980        | Keyboard           | demik@68kMLA          |
+| 0x05       | MacAlly          | MacAlly-MK                          | 105X         | Keyboard           | demik@68kMLA          |
+| 0x05       | Ortek Technology | Personal Computer Extended Keyboard | KB-405       | Keyboard           | Antoine Vignau@68kMLA |
+| 0x05       | SuperMac         |                                     | ACK-310      | Keyboard           | Antoine Vignau@68kMLA |
+| 0x06       | Apple            | Portable Keyboard                   | ?            | Keyboard           | [Link][1]             |
+| 0x07       | Apple            | Portable Keyboard ISO               | ?            | Keyboard           | [Link][1]             |
+| 0x08       | Apple            | Keyboard II                         | M0487        | Keyboard           | Tashtari              |
+| 0x09       | Apple            | Keyboard II ISO                     | ?            | Keyboard           | [Link][1]             |
+| 0x0A/0x0C  | Apple            | PowerBook 100/140/170 Keyboard      | ?            | Keyboard           | [Link][1]             |
+| 0x0C       | Apple            | PowerBook Duo 230 Keyboard          | ?            | Keyboard           | mdeverhart@68kMLA     |
+| 0x0D       | Apple            | PowerBook 100/140/170 Keyboard ISO  | ?            | Keyboard           | [Link][1]             |
+| 0x0E       | Apple            | Adjustable Keyboard Keypad          | M1242        | Keypad             | [Link][1] [Link][2]   |
+| 0x10       | Apple            | Adjustable Keyboard                 | M1242        | Keyboard           | [Link][1] [Link][2]   |
+| 0x11       | Apple            | Adjustable Keyboard ISO             | ?            | Keyboard           | [Link][1]             |
+| 0x12       | Apple            | Adjustable Keyboard JIS             | ?            | Keyboard           | [Link][2]             |
+| 0x16       | Apple            | Keyboard II JIS                     | M0487        | Keyboard           | [Link][2]             |
+| 0x34[^2]   | Advanced Gravis  | Mac GamePad                         |              | Game controller    | Tashtari              |
 
 
 ## Relative Pointing Devices
