@@ -18,6 +18,6 @@ This document contains known responses to the Model Number command for Macintosh
 | M0110F (France) Keyboard, No Keypad                      | 0x03 (0 000 001 1) | demik@68kMLA                |
 | M0120 Keypad, No Keyboard                                | 0x11 (0 001 000 1) | Tashtari                    |
 | M0110 (US) Keyboard, M0120 Keypad                        | 0x13 (0 001 001 1) | Tashtari                    |
-| M0110F (France) Keyboard, M0120 Keypad                   | 0x13 (0 000 001 1) | demik@68kMLA                |
+| M0110F (France) Keyboard, M0120P Keypad                  | 0x13 (0 000 001 1) | demik@68kMLA                |
 | M0110 (US) Keyboard, Dayna MacCharlie Keyboard Extension | 0x13 (0 001 001 1) | KennyPowers@TinkerDifferent |
 | M0110A (US) Keyboard                                     | 0x0B (0 000 101 1) | KennyPowers@TinkerDifferent |
